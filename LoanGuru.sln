@@ -1,27 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "connect_DB", "connect_DB\", "{5A7645B2-C25B-4112-BF1E-DA01B0E33681}"
-	ProjectSection(WebsiteProperties) = preProject
-		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
-		ProjectReferences = "{DC12984F-5C1C-4EE2-A41B-1DAED06DBD49}|MODEL.dll;{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}|BAL.dll;{6B4CB7D9-D47A-4E67-8529-EA1B4A4E8AB8}|DAL.dll;{42579C9D-BB73-401E-81EF-AB02BB196370}|Helper.dll;"
-		Debug.AspNetCompiler.VirtualPath = "/connect_DB"
-		Debug.AspNetCompiler.PhysicalPath = "connect_DB\"
-		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\connect_DB\"
-		Debug.AspNetCompiler.Updateable = "true"
-		Debug.AspNetCompiler.ForceOverwrite = "true"
-		Debug.AspNetCompiler.FixedNames = "false"
-		Debug.AspNetCompiler.Debug = "True"
-		Release.AspNetCompiler.VirtualPath = "/connect_DB"
-		Release.AspNetCompiler.PhysicalPath = "connect_DB\"
-		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\connect_DB\"
-		Release.AspNetCompiler.Updateable = "true"
-		Release.AspNetCompiler.ForceOverwrite = "true"
-		Release.AspNetCompiler.FixedNames = "false"
-		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "2803"
-	EndProjectSection
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "Reference\BAL\BAL.csproj", "{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{AA0E80A8-EBCE-46C1-90B3-A79F0059A567}"
@@ -32,16 +11,32 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODEL", "Reference\MODEL\MO
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helper", "Reference\Helper\Helper.csproj", "{42579C9D-BB73-401E-81EF-AB02BB196370}"
 EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LoanGuru", "LoanGuru\", "{1FAA9FAD-54B6-462E-B27F-9AD3DB24D920}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		Debug.AspNetCompiler.VirtualPath = "/LoanGuru"
+		Debug.AspNetCompiler.PhysicalPath = "LoanGuru\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\LoanGuru\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/LoanGuru"
+		Release.AspNetCompiler.PhysicalPath = "LoanGuru\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\LoanGuru\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "53812"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{5A7645B2-C25B-4112-BF1E-DA01B0E33681}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A7645B2-C25B-4112-BF1E-DA01B0E33681}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5A7645B2-C25B-4112-BF1E-DA01B0E33681}.Release|Any CPU.ActiveCfg = Debug|Any CPU
-		{5A7645B2-C25B-4112-BF1E-DA01B0E33681}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -58,6 +53,10 @@ Global
 		{42579C9D-BB73-401E-81EF-AB02BB196370}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{42579C9D-BB73-401E-81EF-AB02BB196370}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{42579C9D-BB73-401E-81EF-AB02BB196370}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FAA9FAD-54B6-462E-B27F-9AD3DB24D920}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAA9FAD-54B6-462E-B27F-9AD3DB24D920}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FAA9FAD-54B6-462E-B27F-9AD3DB24D920}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FAA9FAD-54B6-462E-B27F-9AD3DB24D920}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

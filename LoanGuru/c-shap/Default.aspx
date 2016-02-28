@@ -9,7 +9,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-    ss
+            <!-- Credit on Hand Affiliate Program -->
+<iframe src="http://aff.creditonhand.com/textlink.php?m=yInV1QVSwpHWPZ2VxRHUSlmYzdkJ1MjJyATM" width="550" height="100" marginwidth="0" marginheight="10" hspace="0" vspace="0" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+<!-- End Script -->
+	
     </div>
     </form>
 </body>
