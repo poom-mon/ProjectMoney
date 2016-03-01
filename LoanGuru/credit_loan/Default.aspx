@@ -1,9 +1,10 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MS_MAIN.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="_Default" %>
 
-<asp:Content ID="Content1" ContentPlaceHolderID="cpnHead" Runat="Server">  
-    <link href="../css/content.css" rel="stylesheet" />   
+<asp:Content ID="Content1" ContentPlaceHolderID="cpnHead" Runat="Server">
+ <link href="../css/content.css" rel="stylesheet" />   
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="cpn_Content" Runat="Server"> 
+<asp:Content ID="Content2" ContentPlaceHolderID="cpn_Content" Runat="Server">
+   
 
 	<section id="wrapper"> 
 		<div class="row"> 
@@ -15,8 +16,7 @@
                         ค้นหาสินเชือ
                         </strong>
                     </div>
-					<div class="panel-body">  
-
+					<div class="panel-body">   
                         <div class="mail-attachments"> 
                         <div class="row"> 
                             <div class="col-sm-12 col-md-6"> 
@@ -35,9 +35,7 @@
     	                        </div> 
                              </div>
                              </div>
-                          </div>
-
-
+                          </div>  
 						<div class="mail-attachments"> 
                             <div class="table-responsive">
 							  <table class="table table-striped table-condensed table-hover table-bordered" style="font-size:12px;">
@@ -73,16 +71,14 @@
                                             <div class="btn btn-info btn-md _buttonRegist"> 
                                                  <i class="glyphicon glyphicon-edit"></i> 
                                                   สมัคร
-                                           </div>
-
-
+                                           </div> 
                                        </td>
 									</tr> 
 
 								</tbody>
 							</table>
 							 </div>
-						</div>  
+						</div>   
 					</div>
 				</section>
 			</div>
@@ -90,11 +86,10 @@
 			 
 			
 		</div> 
-	</section>
- 
-
+	</section> 
+
 </asp:Content>
-<asp:Content ID="Content3" ContentPlaceHolderID="cpnfoot" Runat="Server"> 
-    <script src="../js/credit_loan/search_loan.js?ver=<%=DateTime.Now %>" type="text/javascript"></script>
+<asp:Content ID="Content3" ContentPlaceHolderID="cpnfoot" Runat="Server">
+  <script src="../js/credit_loan/search_loan.js?ver=1/3/2559 9:48:16" type="text/javascript"></script>
 </asp:Content>
 
