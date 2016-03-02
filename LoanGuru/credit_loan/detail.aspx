@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MS_MAIN.master" AutoEventWireup="true" CodeFile="promotion.aspx.cs" Inherits="_Default" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MS_MAIN.master" AutoEventWireup="true" CodeFile="detail.aspx.cs" Inherits="_Detail" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="cpnHead" Runat="Server">
     <style>
@@ -12,6 +12,54 @@
     width: 100%;
     height: auto;
     }
+
+
+    .snap-bottom {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 10px 0;
+  z-index: 999;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+}
+.snap-bottom.non-snap {
+  padding: 0;
+  position: static;
+  box-shadow: none;
+  margin-top: 15px;
+}
+
+
+
+.form-container .dp-table-cell {
+  padding-right: 5px;
+}
+.form-container .dp-table-cell + .dp-table-cell {
+  padding-right: 0;
+  padding-left: 5px;
+}
+.form-container .form-control {
+  font-family: "arial", tahoma;
+  line-height: 1.3em;
+  font-size: 14px;
+  line-height: 32px;
+}
+.form-container label {
+  font-weight: 100;
+}
+@media (min-width: 1200px) {
+  .form-container .form-group {
+    margin-top: 25px;
+  }
+  .form-container .form-control {
+    height: 40px;
+    line-height: 1em;
+    font-weight: 100;
+    padding-top: 3px;
+  }
+}
 
 
     </style>
@@ -123,7 +171,8 @@
                                     </tr>
 									 
 								</tbody>
-							</table> 
+							</table>  
+
 						</div>
 
                         <div class="mail-content" style="font-size:12px;"> 
@@ -134,13 +183,24 @@
                                 <p>3.	สมาชิกใหม่ที่จะได้รับโอนเงินภายในวันเดียวกันเฉพาะการโอนเงินเข้าบัญชีธนาคารกรุงเทพ, ธนาคารกรุงศรีอยุธยา, ธนาคารกรุงไทย, ธนาคารไทยพาณิชย์, ธนาคารกสิกรไทยและจะต้องทราบผลการอนุมัติก่อน 13.00 น. (กรณีที่ทราบผลการอนุมัติหลัง 13.00 น. จะได้รับเงินในวันทำการถัดไป)</p> 
                                 <p>4.	เฉพาะจำนวนเงินที่สมาชิกใหม่เบิกถอนเงินสดภายใน 90 วันนับจากวันที่ได้รับอนุมัติสินเชื่อ สำหรับการเบิกถอนเงินสดครั้งถัดไป บริษัทฯ จะเรียกเก็บในอัตราดอกเบี้ยปกติแบบลดต้นลดดอกต่อปี</p> 
 						   
-                        </div>
-                         
-						
+                        </div> 
 					</div>
 				</section>
-
+                 
+                   
+                <div class="col-sm-12">  
+                    <div id="pt"></div> 
+	                    <div class="form-group btnsubmit submit-btn snap-bottom" style="display:">
+		                    <div class="container">
+			                    <a class="button-ui button-green" id='btnSubmit'>เลือกแผนนี้</a>
+			                    <p class="freeText">สมัครวันนี้ <span class="red">ฟรี e-Voucher</span> ส่วนลดที่พักและสปา</p>
+		                    </div>
+	                    </div>
+                 </div> 
+          
+              
                
+
 
                 <section class="panel panel-default mail-container">
 					<div class="panel-heading">
@@ -173,6 +233,10 @@
 		</div>
 
 	</section>
+
+    
+ 
+
  
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="cpnfoot" Runat="Server"> 
@@ -188,7 +252,26 @@
                 margin: 0,
                 autoWidth: true
          }); 
-              
+               
+        function isElementInViewport() {
+            var scrollTop = $(window).scrollTop();
+            var viewportHeight = $(window).height();
+            $('#pt').each(function () {
+                var top = $(this).offset().top;
+                console.log(top);
+                console.log(scrollTop + viewportHeight);
+                if (scrollTop + viewportHeight >= top) {
+                    $('.submit-btn').addClass('non-snap');
+                   console.log(true);
+                } else {
+                    $('.submit-btn').removeClass('non-snap');
+                    console.log(false);
+                }
+            });
+        }
+        $(window).scroll(isElementInViewport);
+   
+
     </script> 
 </asp:Content>
 

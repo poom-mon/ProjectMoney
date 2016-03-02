@@ -1,6 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2012
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL", "Reference\BAL\BAL.csproj", "{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference", "Reference", "{AA0E80A8-EBCE-46C1-90B3-A79F0059A567}"
@@ -14,6 +14,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LoanGuru", "LoanGuru\", "{1FAA9FAD-54B6-462E-B27F-9AD3DB24D920}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96}|BAL.dll;{6B4CB7D9-D47A-4E67-8529-EA1B4A4E8AB8}|DAL.dll;{42579C9D-BB73-401E-81EF-AB02BB196370}|Helper.dll;{DC12984F-5C1C-4EE2-A41B-1DAED06DBD49}|MODEL.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/LoanGuru"
 		Debug.AspNetCompiler.PhysicalPath = "LoanGuru\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\LoanGuru\"
