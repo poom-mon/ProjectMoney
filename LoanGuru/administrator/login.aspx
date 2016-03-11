@@ -30,7 +30,16 @@
 
     <script src="../js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <script>
-        
+        function fncChkLog() {
+            callAjaxAsyFailData()
+            var url= "login.aspx/checkLog
+            callAjaxAsyFailData({username : "1234"  ,password:"123333"}, url, 
+                function(){
+            
+                }
+            )
+
+        }
     </script>
 </body>
 </html>
