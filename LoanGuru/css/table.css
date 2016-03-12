@@ -1,0 +1,105 @@
+﻿
+
+/***** table css ***/
+
+
+table {
+  font-family: arial;
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.table { 
+  width: 100%;
+  margin-bottom: 20px;  
+} 
+.table th
+{ 
+  font-weight: bolder;
+  font-size: 12px;
+  padding: 8px 15px;
+  line-height: 20px;
+  text-align: center;
+  vertical-align: middle; 
+  border: 1px solid black;  
+}
+
+.table td {
+  font-weight: normal;
+  font-size: 12px;
+  padding: 8px 15px;
+  line-height: 20px;
+  text-align: left;
+  vertical-align: middle;
+  border-top: 1px solid #dddddd;
+  border: 1px solid black;  
+}
+.table thead th {
+  background: #003366;
+  vertical-align: bottom;
+  color:White;
+}   
+.table tbody > tr:nth-child(odd) > td,
+.table tbody > tr:nth-child(odd) > th {
+  background-color: #fafafa;
+}    
+.table .t-small {
+  width: 5%;
+}
+.table .t-medium {
+  width: 15%;
+}
+.table .t-status {
+  font-weight: bold;
+}
+.table .t-active {
+  color: #46a546;
+}
+.table .t-inactive {
+  color: #e00300;
+}
+.table .t-draft {
+  color: #f89406;
+}
+.table .t-scheduled {
+  color: #049cdb;
+}
+
+/* Small Sizes */
+@media (max-width: 480px) { 
+  .table-action thead {
+    display: none;
+  }
+  .table-action tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  .table-action td {
+    border: 0;
+  }
+  .table-action td:not(:first-child) {
+    display: block;
+  }
+} 
+.headerMenu
+{
+    font-weight:bolder;    
+}
+/** end table css ***/
+/*** button css ***/
+.button {
+	display: inline-block;
+	text-decoration: none;
+	color: #ffffff!important;
+	font-weight: bold;
+	background-color: #538fbe;
+	padding: 20px 70px;
+	font-size: 13px;
+	border: 1px solid #2d6898; 
+    padding-top: 9px;
+    padding-bottom: 11px;
+    padding-left: 42px;
+    padding-right: 47px; 
+}
+/** end button css ***/
