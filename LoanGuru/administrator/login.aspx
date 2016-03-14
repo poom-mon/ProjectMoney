@@ -20,26 +20,33 @@
                         <span id="reauth-email" class="reauth-email"></span>
                         <input type="text" id="tbUsername" class="form-control" placeholder="Username" required autofocus>
                         <input type="password" id="tbPassword" class="form-control" placeholder="password" required> 
-                        <button class="btn btn-lg btn-success btn-block btn-signin" type="submit">Login</button>
+                   
+                    <input id="btnLogin" type="button" class="btn btn-lg btn-success btn-block btn-signin" value="login" />
+                     
+
                     </form><!-- /form --> 
                 </div><!-- /card-container -->
             </div><!-- /container -->
 
     </div>
     </form>
+     
+    <script src="../js/File/jquery.1.11.0.min.js" type="text/javascript"></script>
+    <script src="../js/cHelper.js" type="text/javascript"></script>
 
-    <script src="../js/bootstrap/bootstrap.min.js" type="text/javascript"></script>
     <script>
-        function fncChkLog() {
-            callAjaxAsyFailData()
-            var url= "login.aspx/checkLog
-            callAjaxAsyFailData({username : "1234"  ,password:"123333"}, url, 
-                function(){
-            
-                }
-            )
+        $(function () {
+            $("#btnLogin").on("click", function () {
+                var _userName = $("#tbUsername").val()
+                var _pass = $("#tbPassword").val()
+                var data = { username: _userName, password: _pass };
+                var obj = callAjaxAsyFailObj(data, "login.aspx/checkLogin", function (o) {
+                    if (o)
+                        window.location.href = "main.aspx";
+                })
+            });
+        }); 
 
-        }
     </script>
 </body>
 </html>

@@ -40,6 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="authenModel.cs" />
     <Compile Include="FileUploadMODEL.cs" />
     <Compile Include="QueryModel.cs" />
     <Compile Include="TestModel.cs" />

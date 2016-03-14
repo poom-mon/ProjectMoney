@@ -8,7 +8,7 @@
 
 	<section id="wrapper"> 
 		<div class="row"> 
-			<div class="col-sm-12">
+			<div class="col-sm-12" style=" padding-left: 0px; padding-right: 0px;">
 				<section class="panel panel-default mail-container">
 					<div class="panel-heading">
                         <strong>
