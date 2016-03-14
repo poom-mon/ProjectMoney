@@ -1,0 +1,7 @@
+﻿
+
+http://insur-thai.com:8880/
+
+database:insurtha_Loan
+username:pploan
+password:poom5555
