@@ -8,7 +8,7 @@
                 <h1>ประกันภัยรถยนต์</h1>
                 <hr>
                 <p>เปรียบเทียบเบี้ยประกันภัยรถยนต์</p>
-                <a href="#product" class="btn btn-primary btn-xl page-scroll">เปรียบเทียบเบี้ยประกันภัยรถยนต์</a>
+                <a href="#product"   class="btn btn-primary btn-xl page-scroll ">เปรียบเทียบเบี้ยประกันภัยรถยนต์</a>
            </div>  
     </section> 
 </asp:Content>
@@ -16,22 +16,55 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="ctpMain" Runat="Server">
 
     <section   id="product">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">
-                    เปรียบเทียบเบี้ยประกัน
-                        </h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
+    
+        <div class="container"> 
+              <div class="col-md-12">
+                        <div class="form-area"> 
+                              <h2 style="text-align:center;"> เปรียบเทียบเบี้ยประกัน </h2>
 
+                            <br style="clear:both">  
+    				                    <div class="form-group">
+                                                <select id="ddlYearCar" class="form-control" >
+                                                    <option value="0">--เลือกรถ--</option> 
+                                                </select>   
+					                    </div>
+					                    <div class="form-group">
+                                                <select id="ddlBandCar" class="form-control" >
+                                                    <option value="0">--เลือกยี่ห้อรถ--</option> 
+                                                </select>  
+					                    </div>
+					                    <div class="form-group">
+                                                <select id="ddlModelcar" class="form-control" >
+                                                    <option value="0">--เลือกรุ่นรถ--</option> 
+                                                </select> 					            </div>
+					                    <div class="form-group">
+						                    <input type="text" class="form-control" id="tbMobile" name="mobile" placeholder="เบอร์โทร์" required>
+					                    </div> 
+            
+                            <div class="form-group" style="text-align:center;">
+                               <%-- <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btncompare">คำนวณเบี้ยประกัน</button>--%>
+                                 <button type="button" id="submit" name="submit" class="btn btn-primary btncompare">คำนวณเบี้ยประกัน</button> 
+                            </div>
+                        </div>
+                    </div> 
         </div>
-       </section>
+    </section>
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
+    <style> 
+        .form-area
+        { 
+	        padding: 10px 40px 60px;
+	        margin: 10px 0px 60px;
+	        border: 1px solid GREY;
+	   }
+        .btncompare {
+            width: 324px;
+            height: 51px;
+            font-size: 18px;
+        }
+
+    </style>
 </asp:Content>
 
