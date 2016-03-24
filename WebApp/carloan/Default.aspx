@@ -15,24 +15,62 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ctpMain" Runat="Server">
 
-    <section   id="product">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">
-                    ใน 30 วินาที มาดูกันว่าธนาคารไหนให้วงเงินสูงสุด ดอกเบี้ยต่ำสุด 
-                        กรอกข้อมูล รู้วงเงินกู้! ค่างวด! โอกาสอนุมัติ! ทันที
-                        </h2>
-                    <hr class="primary">
-                </div>
-            </div>
-        </div>
-        <div class="container">
+    <section  id="product"> 
+
+        <div class="container">  
+              <div class="col-md-12">
+
+                        <div class="form-area formAr"> 
+                             
+                              <h2 class="section-heading hMenu" style="text-align:center;">
+                                ใน 30 วินาที มาดูกันว่าธนาคารไหนให้วงเงินสูงสุด ดอกเบี้ยต่ำสุด <br />
+                                    กรอกข้อมูล รู้วงเงินกู้! ค่างวด! โอกาสอนุมัติ! ทันที
+                                    </h2>
+                                <hr class="primary">
+
+
+                                <br style="clear:both">  
+    				                        <div class="form-group">
+                                                    <select id="ddlYearCar" class="form-control" >
+                                                        <option value="0">--เลือกรถ--</option> 
+                                                    </select>   
+					                        </div>
+					                        <div class="form-group">
+                                                    <select id="ddlBandCar" class="form-control" >
+                                                        <option value="0">--เลือกยี่ห้อรถ--</option> 
+                                                    </select>  
+					                        </div>
+					                        <div class="form-group">
+                                                    <select id="ddlModelcar" class="form-control" >
+                                                        <option value="0">--เลือกรุ่นรถ--</option> 
+                                                    </select> 		
+                                           </div>
+
+                                           <div class="form-group">    
+      	                                           <label>
+                                                   <input type="checkbox" class="checkbox" style="WIDTH: 25PX; HEIGHT: 20PX;display:inline;" />
+                                                       <span > เป็นรถโครงการรถคันแรก </span>
+                                                    </label>  
+
+                                           </div> 
+
+					                        <div class="form-group">
+						                        <input type="text" class="form-control" id="tbMobile" name="mobile" placeholder="เบอร์โทร์" required>
+					                        </div> 
+            
+                            <div class="form-group" style="text-align:center;">
+                               <%-- <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btncompare">คำนวณเบี้ยประกัน</button>--%>
+                                 <button type="button" id="submit" name="submit" class="btn btn-primary btncompare">คำนวณเบี้ยประกัน</button> 
+                            </div>
+                        </div>
+                    </div> 
+       
 
         </div>
        </section>
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
+  
 </asp:Content>
 

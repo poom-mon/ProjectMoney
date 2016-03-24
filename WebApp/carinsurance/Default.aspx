@@ -19,7 +19,7 @@
     
         <div class="container"> 
               <div class="col-md-12">
-                        <div class="form-area"> 
+                        <div class="form-area formAr"> 
                               <h2 style="text-align:center;"> เปรียบเทียบเบี้ยประกัน </h2>
 
                             <br style="clear:both">  
@@ -51,20 +51,6 @@
     </section>
 
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
-    <style> 
-        .form-area
-        { 
-	        padding: 10px 40px 60px;
-	        margin: 10px 0px 60px;
-	        border: 1px solid GREY;
-	   }
-        .btncompare {
-            width: 324px;
-            height: 51px;
-            font-size: 18px;
-        }
-
-    </style>
+<asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server"> 
 </asp:Content>
 

@@ -553,73 +553,38 @@ section {
 }
 
 /**** new caue sell ****/
-
-/**
-    .carousel-control.left
-	{
-		background: none;
-	}
-	.carousel-control.right
-	{
-		background: none;
-	}
-
-	.carousel-control
-	{
-		position: absolute;
-		top: 45%;
-		bottom: 0;
-		left: 0;
-		width: 15%;
-		font-size: auto;
-		color: #fff;
-		text-align: center;
-		opacity: 1;
-		text-shadow: none;
-	}
-	.carousel-control:hover
-	{
-		color: #000;
-	}
-	.carousel-indicators
-	{
-		bottom: -50px;
-	}
-	.carousel-indicators li
-	{
-		display: inline-block;
-		width: 10px;
-		height: 10px;
-		margin: 1px;
-		text-indent: -999px;
-		cursor: pointer;
-		background-color: #000\9;
-		background-color: rgba(0,0,0,0);
-		border: 1px solid #16a085;
-		border-radius: 50%;
-	}
-	.carousel-indicators .active
-	{
-		width: 12px;
-		height: 12px;
-		margin: 0;
-		background-color: #16a085;
-	}
-	.carousel-caption
-	{
-		position: absolute;
-		right: 0;
-		bottom: 0;
-		left: 0;
-		z-index: 10;
-		padding-top: 20px;
-		padding-bottom: 20px;
-		color: #fff;
-		text-align: center;
-		background: rgba(0,0,0,0.4);
-	}
-	**/
-	
-	/* carousel */
+ 
+.form-area
+{ 
+	padding: 10px 40px 60px;
+	margin: 10px 0px 60px;
+	border: 1px solid GREY;
+}  
+@media (min-width:500px){
+    .btncompare {
+        width: 324px;
+        height: 51px;
+        font-size: 16px;
+      } 
+     
+}
+@media (max-width:499px)
+{
+    .btncompare {
+        width: 154px;
+        height: 35px;
+        font-size: 16px;
+      }
+      .hMenu
+      {
+          font-size: 14px;
+          text-align:center;
+          font-weight:bolder;
+      }
+      .formAr
+      {
+        padding: 10px 10px;    
+      }
+}
 	
 	 
