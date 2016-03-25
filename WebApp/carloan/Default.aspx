@@ -1,6 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MS_Main.master" AutoEventWireup="true" CodeFile="Default.aspx.cs" Inherits="Default2" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+  <link href="../css/email/mailtip.css" rel="stylesheet" type="text/css" />
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ctpHeadMenu" Runat="Server">
   <section>
@@ -31,46 +32,55 @@
 
                                 <br style="clear:both">  
     				                        <div class="form-group">
-                                                    <select id="ddlYearCar" class="form-control" >
+                                                    <select id="ddlYearCar"  name="ddlYearCar"  class="form-control" >
                                                         <option value="0">--เลือกรถ--</option> 
                                                     </select>   
 					                        </div>
 					                        <div class="form-group">
-                                                    <select id="ddlBandCar" class="form-control" >
+                                                    <select id="ddlBandCar"   name="ddlBandCar"   class="form-control" >
                                                         <option value="0">--เลือกยี่ห้อรถ--</option> 
                                                     </select>  
 					                        </div>
 					                        <div class="form-group">
-                                                    <select id="ddlModelcar" class="form-control" >
+                                                    <select id="ddlModelcar"   name="ddlModelcar"   class="form-control" >
                                                         <option value="0">--เลือกรุ่นรถ--</option> 
                                                     </select> 		
                                            </div>
 
                                            <div class="form-group">    
       	                                           <label>
-                                                   <input type="checkbox" class="checkbox" style="WIDTH: 25PX; HEIGHT: 20PX;display:inline;" />
+                                                   <input type="checkbox"  id="ckbFirstBox"  name="ckbFirstBox" class="checkbox" style="WIDTH: 25PX; HEIGHT: 20PX;display:inline;" />
                                                        <span > เป็นรถโครงการรถคันแรก </span>
                                                     </label>  
 
                                            </div> 
 
 					                        <div class="form-group">
-						                        <input type="text" class="form-control" id="tbMobile" name="mobile" placeholder="เบอร์โทร์" required>
+                                                 <input id="tbMobile" onkeypress=" return num_key(event);" maxlength="10" class="form-control input-icon tel" type="tel" placeholder="กรอกเบอร์โทรศัพท์">
 					                        </div> 
+
+                                             <div class="form-group">
+						                        <input type="text" class="form-control" id="tbEmail" name="email" placeholder="email" required>
+					                        </div> 
+
             
-                            <div class="form-group" style="text-align:center;">
-                               <%-- <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btncompare">คำนวณเบี้ยประกัน</button>--%>
-                                 <button type="button" id="submit" name="submit" class="btn btn-primary btncompare">คำนวณเบี้ยประกัน</button> 
-                            </div>
+                                <div class="form-group" style="text-align:center;">
+                                   <%-- <button type="button" id="submit" name="submit" class="btn btn-primary pull-right btncompare">คำนวณเบี้ยประกัน</button>--%>
+                                        <input id="btnCarLoan" type="button" class="btn btn-primary btncompare" value="คำนวณเบี้ยประกัน" />
+                                </div>
                         </div>
                     </div> 
-       
-
+        
         </div>
        </section>
 
 </asp:Content>
-<asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
-  
+<asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server"> 
+  <script src="//www.silkspan.com/silkspan_service/js/TrusteeCar/min/ssapi.min.js?v=2" type="text/javascript"></script> 
+
+   <script src="../js/cHelper.js" type="text/javascript"></script>
+    <script src="../js/email/jquery.mailtip.min.js" type="text/javascript"></script>
+   <script src="../js/carloan/carloan.js" type="text/javascript"></script>
+
 </asp:Content>
 
