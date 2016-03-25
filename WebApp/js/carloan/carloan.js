@@ -56,22 +56,24 @@ $('#btnCarLoan').click(function (event) {
 
 
 function valid() {
-
-    $('.silkspan_alerttxtmsg').remove(); 
     var v = true;
+    $('.silkspan_alerttxtmsg').remove();  
     if (typeof yearCar === 'undefined' || yearCar == 0) {
         alertTxtMsg($Yearcar, 'กรุณาระบุ ปีรถ ด้วยค่ะ');
         throw new Error("requires Year Car !");
+        v = false;
     }
 
     if (typeof brandCar === 'undefined' || brandCar == 0) {
         alertTxtMsg($BrandCar, 'กรุณาระบุ ยี่ห้อรถ ด้วยค่ะ');
         throw new Error("requires Brand Car !");
+        v = false;
     }
 
     if (typeof modelCar === 'undefined' || modelCar == 0) {
         alertTxtMsg($ModelCar, 'กรุณาระบุ รุ่นรถ ด้วยค่ะ');
         throw new Error("requires Model Car !");
+        v = false;
     }
 
       if (typeof phone === 'undefined' || phone == '') {
