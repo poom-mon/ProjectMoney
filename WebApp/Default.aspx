@@ -16,19 +16,19 @@
                            <h1>คำนวณเบี้ยประกันรถยนต์</h1>
                            <hr>
                            <p>สินเชื่อประกันรถยนต์</p> 
-                           <a href="carinsurance/Default.aspx#product" class="btn btn-primary btn-xl page-scroll">เทียบเบียประกัน</a>
+                           <a href="carinsurance/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-primary btn-xl page-scroll">เทียบเบียประกัน</a>
                    </div>
                    <div class="item">
                           <h1>สินเชื่อรถยนต์</h1>
                            <hr>
                            <p>สินเชื่อรถยนต์</p>
-                           <a href="carloan/Default.aspx#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
+                           <a href="carloan/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
                    </div>
                    <div class="item">
                            <h1>บัตรกดเงินสด</h1>
                            <hr>
                            <p>บัตรกดเงินสด</p>
-                           <a href="credit/Default.aspx#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
+                           <a href="credit/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
                    </div> 
                  </div>
              </div>

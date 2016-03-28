@@ -11,4 +11,14 @@ public partial class MS_Main : System.Web.UI.MasterPage
     {
 
     }
+    private string _typedealer;
+    public string typedealer
+    {
+        get
+        {  
+            return (null != Request.QueryString["typedealer"]) ? Request.QueryString["typedealer"].ToString() : "";
+        }
+        set { _typedealer = value; }
+    }
+
 }

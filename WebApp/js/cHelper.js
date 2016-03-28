@@ -158,3 +158,20 @@ function nonSpecialKey(e) {
 function alertTxtMsg(el, msg) {
     el.after("<div class='silkspan_alerttxtmsg' style='color:red;font-size:0.75em;'>" + msg + "</div>");
 }
+
+
+//********************
+//******check mobile size
+//********************
+function IsMobileSize() {
+    var w = screen.width;
+    var h = screen.height;
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+        if (w <= 767)
+            return true;
+        else
+            return false;
+    }
+    else
+        return false;
+}

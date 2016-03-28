@@ -112,7 +112,7 @@
 
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
-                      <a href="#"> 
+                      <a href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=typedealer#product") %>"> 
                             <i class="fa fa-4x fa-car wow bounceIn text-primary"></i>
                             <h3>ประกันรถยนต์</h3>
                             <p class="text-muted">บริการเปรียบเทียบเบี้ยประกันรถยนต์ 20 บริษัท</p>
@@ -122,7 +122,7 @@
 
                 <div class="col-lg-3 col-md-6 text-center"> 
                         <div class="service-box">
-                             <a href="#"> 
+                             <a href="<%= this.ResolveClientUrl("~/carloan/Default.aspx#product") %>"> 
                                 <i class="fa fa-4x fa-car wow bounceIn text-primary" data-wow-delay=".1s"></i>
                                 <h3>สินเชื่อรถยนต์</h3>
                                 <p class="text-muted">สินเชื่อทันใจ รถแลกเงิน</p>
@@ -133,7 +133,7 @@
 
                 <div class="col-lg-3 col-md-6 text-center"> 
                         <div class="service-box">
-                             <a href="#"> 
+                             <a href="<%= this.ResolveClientUrl("~/credit/Default.aspx#product") %>"> 
                                 <i class="fa fa-4x fa-credit-card wow bounceIn text-primary" data-wow-delay=".2s"></i>
                                 <h3>สินเชื่อบัตร</h3>
                                 <p class="text-muted">เปรียบเทียบวงเงินโปรโมชั่น บัตรเครดิต  / บัตรกดเงินสดที่เหมาะกับคุณ </p>
@@ -151,7 +151,7 @@
 
                  <div class="col-lg-3 col-md-6 text-center"> 
                         <div class="service-box">
-                            <a href="#"> 
+                            <a href="<%= this.ResolveClientUrl("~/credit/Default.aspx#product") %>"> 
                                 <i class="fa fa-4x fa-money wow bounceIn text-primary" data-wow-delay=".3s"></i>
                                 <h3>โอนหนี้</h3>
                                 <p class="text-muted">เช็ควงเงินสินเชื่อส่วนบุคคล</p>

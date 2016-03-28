@@ -103,7 +103,7 @@ $('#btnCompare').click(function (event) {
     return v;
 }
 
-carinfo();
+//carinfo();
 function carinfo() {
 //    var _data = {
 //        year_car:  Math.round(yearCar)
