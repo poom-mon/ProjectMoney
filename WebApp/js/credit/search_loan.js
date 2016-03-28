@@ -39,15 +39,16 @@ function RenderPackage() {
            // str += "  </td>";
            // str += "</tr>";
 
+            
 
             str += " <tr>";
-            str += "         <td   class=\"headcol\"  align=\"left\">";
+            str += "         <td   class=\"headcol\" align=\"left\">";
             str += "         <i class=\"glyphicon glyphicon-edit\"  data-id=\"" + _gObject[i].id + "\" ></i>  สมัคร  <br />";
             str += "         <i class=\"glyphicon glyphicon-new-window\" data-id=\"" + _gObject[i].id + "\" data-url=\"" + _gObject[i].urlRegist + "\" ></i>  รายละเอียด";
             str += "         </td>"; 
-            str += "     <td  class=\"blankCol\"  style=\"width:90px;padding-left:80px;\">";   
+            str += "     <td  class=\"blankCol\" >";   
             str += "     </td>";
-		    str += "     <td   align=\"left\">  "; 
+            str += "     <td    class=\"tdcol\"  align=\"left\">  "; 
             str += "         <img src=\"" + _gObject[i].logo + "\"  />"; 
             str += "     </td>";
             str += "     <td align=\"left\">";

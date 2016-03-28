@@ -10,10 +10,20 @@
             color:White;
             font-weight:bolder;
          
-            height: 50px;
+            height: 60px  !important;
             width : 90px !important; 
             font-size:12px; 
-         }  
+            padding:0 ;
+         }
+       .tdcol
+       {
+              height: 60px;
+       }  
+        .blankCol
+        {
+            width:90px !important;
+            padding-left:80px !important;
+         }
     </style>
 </asp:Content>
 
