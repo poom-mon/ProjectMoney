@@ -21,4 +21,8 @@ public partial class MS_Main : System.Web.UI.MasterPage
         set { _typedealer = value; }
     }
 
+    public string callTypedealer() {
+        return typedealer;
+    }
+
 }
