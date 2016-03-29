@@ -175,19 +175,18 @@
      <section class="no-padding" id="portfolio">
         <div class="container-fluid">
             <div class="row no-gutter"> 
-
-            <%for (int i = 0; i <= 1; i++)
-              { %>
+             
                 <div class="col-lg-2 col-sm-3">
                     <a href="#" class="portfolio-box">
-                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/1.jpg") %>" class="img-responsive" alt="">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/silkspan.jpg") %>" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
                                     silkspan
                                 </div>
                                 <div class="project-name">
-                                    ให้บริการมากกว่า 15 ปี มีผู้ให้บริการแล้วมากกว่า 2,000,000 ราย
+                                    ให้บริการมากกว่า 16 ปี มีผู้ให้บริการแล้วมากกว่า 2,000,000 ราย
+                                    ให้บริการบัตรเครดิต สินเชืีื่อและประกัน
                                 </div>
                             </div>
                         </div>
@@ -196,14 +195,14 @@
 
                  <div class="col-lg-2 col-sm-3">
                     <a href="#" class="portfolio-box">
-                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/2.jpg") %>" class="img-responsive" alt="">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/citilogo.png") %>" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    citi
+                                    ซิตี้แบงค์ประเทศไทย
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    ให้บริการบัตรเครดิต
                                 </div>
                             </div>
                         </div>
@@ -212,30 +211,31 @@
 
                  <div class="col-lg-2 col-sm-3">
                     <a href="#" class="portfolio-box">
-                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/3.jpg") %>" class="img-responsive" alt="">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/fisttchoiceogo.png") %>" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    กรุงศรีเฟริสช้อยส์
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    บัตรเครดิตเฟริสช้อยส์   
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
+
 
               <div class="col-lg-2 col-sm-3">
                     <a href="#" class="portfolio-box">
-                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/4.jpg") %>" class="img-responsive" alt="">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/kasikorn_Leasing.png") %>" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    สินเชื่อรถช่วยได้กสิกร
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    กสิกร สินเชื่อรถช่วยได้...
                                 </div>
                             </div>
                         </div>
@@ -244,14 +244,14 @@
 
                   <div class="col-lg-2 col-sm-3">
                     <a href="#" class="portfolio-box">
-                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/5.jpg") %>" class="img-responsive" alt="">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/tiscologo.png") %>" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    ทิสโก้แคปปิตอล
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                   สินเชื่อรถยนต์ทิสโก้
                                 </div>
                             </div>
                         </div>
@@ -260,61 +260,25 @@
 
                   <div class="col-lg-2 col-sm-3">
                     <a href="#" class="portfolio-box">
-                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/6.jpg") %>" class="img-responsive" alt="">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/secaplogo.png") %>" class="img-responsive" alt="">
                         <div class="portfolio-box-caption">
                             <div class="portfolio-box-caption-content">
                                 <div class="project-category text-faded">
-                                    Category
+                                    สินเชื่อรถอาคเนย์
                                 </div>
                                 <div class="project-name">
-                                    Project Name
+                                    สินเชื่อรถยนต์ อาคเนย์
                                 </div>
                             </div>
                         </div>
                     </a>
                 </div>
-
-                <%} %>
+                 
             </div>
         </div>
     </section>  
 
-  <section id="carousel">     			
-	<div class="container">
-		<div class="row">
-			<div class="col-md-8 col-md-offset-2">
-                <div class="quote"><i class="fa fa-quote-left fa-4x"></i></div>
-                
-				<div class="carousel slide fade-quote-carousel" id="dvFad2" data-ride="carousel" data-interval="3000">
-				  <!-- Carousel indicators -->
-                  <ol class="carousel-indicators">
-				    <li data-target="#dvFad2" data-slide-to="0"></li>
-				    <li data-target="#dvFad2" data-slide-to="1" class="active"></li> 
-				  </ol> 
-
-				  <!-- Carousel items -->
-				  <div class="carousel-inner">  
-				    <div class="item">
-                        <div class="profile-circle" style="background-color: rgba(77,5,51,.2);"></div> 
-                           <h3 class="text-center">เสียงจากผู้ใช้งาน</h3>	 
-				    	<blockquote>
-				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>
-				    </div>
-				    <div class="active item">
-                        <div class="profile-circle" style="background-color: rgba(145,169,216,.2);"></div>
-                         <h3 class="text-center">เสียงจากผู้ใช้งาน</h3>	 
-				    	<blockquote>
-				    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, veritatis nulla eum laudantium totam tempore optio doloremque laboriosam quas, quos eaque molestias odio aut eius animi. Impedit temporibus nisi accusamus.</p>
-				    	</blockquote>
-				    </div>
-                     
-				  </div>
-				</div>
-			</div>							
-		</div>
-	</div>
-</section>
+     
  
 
     <section id="contact">
