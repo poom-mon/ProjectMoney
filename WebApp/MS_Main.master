@@ -365,6 +365,7 @@
     <script src="<%= this.ResolveClientUrl("~/js/wow.min.js") %>"></script> 
     <!-- Custom Theme JavaScript -->
     <script src="<%= this.ResolveClientUrl("~/js/creative.js") %>"></script> 
+    <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>  
 
      <asp:ContentPlaceHolder id="ctpScript" runat="server"></asp:ContentPlaceHolder>
 </body>
