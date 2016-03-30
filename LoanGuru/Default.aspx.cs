@@ -9,6 +9,11 @@ public partial class _Default : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
-        Response.Redirect(this.ResolveClientUrl("~/")+"credit_loan/Default.aspx"); 
+
+
+        Application["test"] = 10;
+
+        Response.Write("test" + Application["test"]);
+       // Response.Redirect(this.ResolveClientUrl("~/")+"credit_loan/Default.aspx"); 
     }
 }

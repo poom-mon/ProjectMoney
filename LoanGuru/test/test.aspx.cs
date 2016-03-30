@@ -9,6 +9,8 @@ public partial class test : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
     {
+        Response.Write("typedealer:"+ Request["typedealer"] +"<br>");
+
         // Get request.
         HttpRequest request = base.Request; 
         // Get UserHostAddress property.
