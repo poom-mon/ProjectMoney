@@ -42,10 +42,8 @@
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
     <link href="css/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
-    <script src="js/carousel/owl.carousel.min.js" type="text/javascript"></script>  
-
-     <script>
-
+    <script src="js/carousel/owl.carousel.min.js" type="text/javascript"></script>   
+     <script> 
          $('.owl-carousel').owlCarousel({
              items: 1,
              loop: true,
