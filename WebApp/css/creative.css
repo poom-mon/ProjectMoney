@@ -585,11 +585,17 @@ section {
       {
         padding: 10px 10px;    
       }
-}
-	
+} 
 .silkspan_alerttxtmsg
 {
     color: #F89C1B !important;
-}
-	
-	 
+} 
+.tdBorder
+{
+    font-weight:bolder;    
+ } 
+ .content > p
+ {
+    font-size:12px;    
+     margin-bottom: 2px;
+ }
