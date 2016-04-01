@@ -1,0 +1,388 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MS_Main.master.cs" Inherits="MS_Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title> 
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content=""> 
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder> 
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/bootstrap.min.css") %>" type="text/css">  
+    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/font-awesome/css/font-awesome.min.css") %>" type="text/css">  
+    <!-- Plugin CSS -->
+    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/animate.min.css") %>" type="text/css"> 
+    <!-- Custom CSS -->
+   <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/main.css") %>" type="text/css"> 
+
+  
+</head>
+<body  id="page-top">  
+       <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">Insur-Thai 
+                </a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                  <li>
+                        <a class="page-scroll" href="<%= this.ResolveClientUrl("~/") %>">หน้าแรก</a>
+                    </li>
+                   <%-- <li>
+                        <a class="page-scroll" href="#about">เกี่ยวกับเรา</a>
+                    </li>--%>
+                    <li>
+                        <a class="page-scroll" href="#services">บริการของเรา</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product">สินเชื่อรถยนต์</a>
+                    </li>
+                     <li>
+                        <a class="page-scroll" href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=") %><%= typedealer %>#product">เปรียบเทียบประกันรถยนต์</a>
+                    </li>
+
+                    <li>
+                        <a class="page-scroll" href="<%= this.ResolveClientUrl("~/credit/Default.aspx?typedealer=") %><%= typedealer %>#product">บัตรเครดิต</a>
+                    </li>
+
+                    <%--<li>
+                        <a class="page-scroll" href="#portfolio">พาธเนอร์ของเรา</a>
+                    </li>--%>
+                    <li>
+                        <a class="page-scroll" href="#contact">ติดต่อเรา</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+     
+
+    <div class="header"> 
+        <div class="header-content">
+            <div class="header-content-inner"> 
+                <asp:ContentPlaceHolder id="ctpHeadMenu" runat="server"> 
+                </asp:ContentPlaceHolder>  
+            </div> 
+        </div> 
+    </div>  
+                 
+                
+
+   <asp:ContentPlaceHolder id="ctpMain" runat="server"> 
+      </asp:ContentPlaceHolder>
+             
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">เกี่ยวกับเรา</h2>
+                    <hr class="light">
+                    <p class="text-faded">เราเป็นบริการด้านการเงินกับลูกค้า ซึ่งเป็นพาธเนอร์กับบริษัทชั้นนำทางการเงิน เพือให้ท่านได้สินค้าที่ดีที่สุดและเปรียบเทียบราคาที่ถูกที่สุด</p>
+                    <a href="#services" class="btn btn-default btn-xl page-scroll">บริการของเรา</a> 
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="services">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">บริการของเรา</h2>
+                    <hr class="primary">
+                </div>
+            </div>
+        </div>
+
+        <div class="container"> 
+            <div class="row">
+
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                      <a href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
+                            <i class="fa fa-4x fa-car wow bounceIn text-primary"></i>
+                            <h3>ประกันรถยนต์</h3>
+                            <p class="text-muted">บริการเปรียบเทียบเบี้ยประกันรถยนต์ 20 บริษัท</p>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center"> 
+                        <div class="service-box">
+                             <a href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
+                                <i class="fa fa-4x fa-car wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                                <h3>สินเชื่อรถยนต์</h3>
+                                <p class="text-muted">สินเชื่อทันใจ รถแลกเงิน</p>
+                             </a>
+                        </div>
+                   
+                </div>
+
+                <div class="col-lg-3 col-md-6 text-center"> 
+                        <div class="service-box">
+                             <a href="<%= this.ResolveClientUrl("~/credit/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
+                                <i class="fa fa-4x fa-credit-card wow bounceIn text-primary" data-wow-delay=".2s"></i>
+                                <h3>สินเชื่อบัตร</h3>
+                                <p class="text-muted">เปรียบเทียบวงเงินโปรโมชั่น บัตรเครดิต  / บัตรกดเงินสดที่เหมาะกับคุณ </p>
+                            </a>
+                        </div> 
+                </div>
+
+               <%-- <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-cc-visa wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                        <h3>บัตรกดเงินสด</h3>
+                        <p class="text-muted">เปรียบเทียบวงเงินโปรโมชั่น บัตรกดเงินสดที่เหมาะกับคุณ </p>
+                    </div>
+                </div>--%>
+
+                 <div class="col-lg-3 col-md-6 text-center"> 
+                        <div class="service-box">
+                            <a href="<%= this.ResolveClientUrl("~/credit/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
+                                <i class="fa fa-4x fa-money wow bounceIn text-primary" data-wow-delay=".3s"></i>
+                                <h3>โอนหนี้</h3>
+                                <p class="text-muted">เช็ควงเงินสินเชื่อส่วนบุคคล</p>
+                            </a>
+                        </div>
+                    
+                </div>  
+            </div>
+        </div>
+    </section>
+
+
+
+<%--     <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h2>พาธเนอร์ของเรา</h2> 
+            </div>
+        </div>
+    </aside> 
+
+     <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter"> 
+             
+                <div class="col-lg-2 col-sm-3">
+                    <a href="#" class="portfolio-box">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/silkspan.jpg") %>" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    silkspan
+                                </div>
+                                <div class="project-name">
+                                    ให้บริการมากกว่า 16 ปี มีผู้ให้บริการแล้วมากกว่า 2,000,000 ราย
+                                    ให้บริการบัตรเครดิต สินเชืีื่อและประกัน
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="col-lg-2 col-sm-3">
+                    <a href="#" class="portfolio-box">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/citilogo.png") %>" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    ซิตี้แบงค์ประเทศไทย
+                                </div>
+                                <div class="project-name">
+                                    ให้บริการบัตรเครดิต
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                 <div class="col-lg-2 col-sm-3">
+                    <a href="#" class="portfolio-box">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/fisttchoiceogo.png") %>" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    กรุงศรีเฟริสช้อยส์
+                                </div>
+                                <div class="project-name">
+                                    บัตรเครดิตเฟริสช้อยส์   
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+
+              <div class="col-lg-2 col-sm-3">
+                    <a href="#" class="portfolio-box">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/kasikorn_Leasing.png") %>" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    สินเชื่อรถช่วยได้กสิกร
+                                </div>
+                                <div class="project-name">
+                                    กสิกร สินเชื่อรถช่วยได้...
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                  <div class="col-lg-2 col-sm-3">
+                    <a href="#" class="portfolio-box">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/tiscologo.png") %>" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    ทิสโก้แคปปิตอล
+                                </div>
+                                <div class="project-name">
+                                   สินเชื่อรถยนต์ทิสโก้
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                  <div class="col-lg-2 col-sm-3">
+                    <a href="#" class="portfolio-box">
+                        <img src="<%= this.ResolveClientUrl("~/img/portfolio/secaplogo.png") %>" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    สินเชื่อรถอาคเนย์
+                                </div>
+                                <div class="project-name">
+                                    สินเชื่อรถยนต์ อาคเนย์
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                 
+            </div>
+        </div>
+    </section>  
+
+     --%>
+ 
+
+    <section id="contact">
+        <div class="container">
+            <div class="row"> 
+                 
+                    <div class="col-md-12">
+                        <div class="form-area2">   
+                            <br style="clear:both">
+                                        <h3 style="margin-bottom: 25px; text-align: center;">ติดต่อเรา</h3>
+    				                    <div class="form-group">
+						                    <input type="text" class="form-control" id="tbname" name="name" placeholder="ชือ" required>
+					                    </div>
+					                    <div class="form-group">
+						                    <input type="text" class="form-control" id="tbEmail" name="email" placeholder="อีเมลล์" required>
+					                    </div>
+                                        <div class="form-group">
+                                        <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
+                                            <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                                        </div> 
+                                    <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                     
+                                
+                           </div>
+                    </div>
+
+               <%--<div class="container">
+    	            <div class="row"> 
+                   <div class="col-lg-8 col-lg-offset-2  text-center"> 
+                        <div class="col-lg-2 col-lg-offset-2"></div>
+                        <div class="col-lg-6 col-lg-offset-2" style="margin-left: 0px;margin-bottom: 5px;"><input id="tbName" name="name" class="form-control" type="text" /></div>
+                    </div>
+
+                    <div class="col-lg-8 col-lg-offset-2 text-center"> 
+                        <div class="col-lg-2 col-lg-offset-2">email</div>
+                        <div class="col-lg-6 col-lg-offset-2" style="margin-left: 0px;margin-bottom: 5px;"><input id="tbEmail" name="email" class="form-control" type="text" /></div>
+                    </div>
+
+                    <div class="col-lg-8 col-lg-offset-2 text-center"> 
+                        <div class="col-lg-2 col-lg-offset-2">ข้อความ</div>
+                        <div class="col-lg-6 col-lg-offset-2" style="margin-left: 0px;margin-bottom: 5px;"> 
+                            <textarea id="tAMessage" name="message" rows="2"  class="form-control" cols="20"></textarea>
+                        </div>
+                    </div>--%>
+
+                 </div>
+               </div> 
+
+               <br />
+               <br /> 
+               <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h3 class="section-heading">ติดต่อเราที่</h3> 
+                   <p><a href="mailto:your-email@your-domain.com">sittiporn.jan@gmail.com</a></p>
+                </div>
+
+                <%--<div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x wow bounceIn"></i>
+                    <p>123-456-6789</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x wow bounceIn" data-wow-delay=".1s"></i>
+                    <p><a href="mailto:your-email@your-domain.com">sittiporn.jan@gmail.com</a></p>
+                </div>--%>
+
+       
+            </div>
+        </div>
+    </section>
+      
+    <div style="text-align:center;">
+         Copyright 2016 © insur-thai.com
+    </div>
+     
+    
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- jQuery -->
+<%--    <script src="<%= this.ResolveClientUrl("~/js/jquery.js") %>"></script> --%>
+    <script src="<%= this.ResolveClientUrl("~/js/jquery/jquery.1.11.0.min.js") %>" type="text/javascript"></script> 
+    <script src="<%= this.ResolveClientUrl("~/js/bootstrap.min.js") %>"></script> 
+    <!-- Plugin JavaScript -->
+    <script src="<%= this.ResolveClientUrl("~/js/jquery.easing.min.js") %>"></script>
+    <script src="<%= this.ResolveClientUrl("~/js/jquery.fittext.js") %>"></script>
+    <script src="<%= this.ResolveClientUrl("~/js/wow.min.js") %>"></script> 
+    <!-- Custom Theme JavaScript -->
+    <script src="<%= this.ResolveClientUrl("~/js/main.js") %>"></script> 
+    <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>  
+
+     <asp:ContentPlaceHolder id="ctpScript" runat="server"></asp:ContentPlaceHolder>
+</body>
+</html>
