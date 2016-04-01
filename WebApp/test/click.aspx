@@ -36,7 +36,7 @@
           <form   method="post" >  
                 credit <br />
                 เหลือคลิกอีก : <asp:Label ID="lbCredit" runat="server" Text="Label"></asp:Label> 
-              <a href="http://www.silkspan.com/banner/log_cbanner_counter.asp?fname=http://www.silkspan.com/silkspan_ssl/revole/detail_rl_ktc_type1.asp&typedealer=creditshop">click</a> 
+              <a href="http://www.silkspan.com/banner/log_cbanner_counter.asp?fname=http://www.silkspan.com/silkspan_ssl/revole/detail_rl_ktc_type1.asp&typedealer=creditshop" target="_blank">click</a> 
           </form>
            
 
