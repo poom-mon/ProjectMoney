@@ -83,25 +83,34 @@
 
 
                                             <div class="form-group">
-                                                <input type="checkbox" name="confirm_1" id="confirm_1" value="yes" class="required" > ท่านรับเงินเดือนผ่านบัญชีธนาคาร <font color="red">*ไม่ได้รับเป็นเงินสด*</font> มี Slip เงินเดือน , มีใบรับรองเงินเดือน
+                                                <input type="checkbox" name="confirm_1" id="confirm_1" value="yes" >
+                                                     ท่านรับเงินเดือนผ่านบัญชีธนาคาร <font color="red">*ไม่ได้รับเป็นเงินสด*</font> มี Slip เงินเดือน , มีใบรับรองเงินเดือน 
+                                                 
+
                                             </div>
                                               <div class="form-group">
-                                                <input type="checkbox" name="confirm_2" id="confirm_2" value="yes" class="required" > ท่านมีฐานเงินเดือนประจำ ไม่ต่ำกว่า 15,000 บาท ต่อเดือน<br>
+                                                 <input type="checkbox" name="confirm_2" id="confirm_2" value="yes" class="required" >
+                                                  ท่านมีฐานเงินเดือนประจำ ไม่ต่ำกว่า 15,000 บาท ต่อเดือน<br>
                                               </div>
                                               <div class="form-group">
-                                                 <input type="checkbox" name="confirm_3" id="confirm_3" value="yes" class="required"  > สำหรับพนักงานเงินเดือน ท่านต้องทำงานประจำเกิน 6 เดือนขึ้นไป / สำหรับเจ้าของธุรกิจต้องทำธุรกิจเกิน 1 ปีขึ้นไป<br>
+                                                 <input type="checkbox" name="confirm_3" id="confirm_3" value="yes" class="required"  >
+                                                  สำหรับพนักงานเงินเดือน ท่านต้องทำงานประจำเกิน 6 เดือนขึ้นไป / สำหรับเจ้าของธุรกิจต้องทำธุรกิจเกิน 1 ปีขึ้นไป<br>
                                               </div>
                                               <div class="form-group">
-                                                <input type="checkbox" name="confirm_4" id="confirm_4" value="yes" class="required"> ท่านไม่ใช่ลูกจ้างชั่วคราว มีเบอร์ออฟฟิศที่บริษัท ถ้าเป็นเจ้าของกิจการต้องมีเอกสารการจดทะเบียน<br>
+                                                <input type="checkbox" name="confirm_4" id="confirm_4" value="yes" class="required">
+                                                 ท่านไม่ใช่ลูกจ้างชั่วคราว มีเบอร์ออฟฟิศที่บริษัท ถ้าเป็นเจ้าของกิจการต้องมีเอกสารการจดทะเบียน<br>
                                               </div>                                                                               
                                               <div class="form-group">                                                             
-                                                <input type="checkbox" name="confirm_5" id="confirm_5" value="yes" class="required"> ท่านไม่ได้ทำงานในอาชีพเหล่านี้ อาชีพที่ธนาคารไม่รับพิจารณา : แม่บ้าน แมสเซนเจอร์ พนักงานขับรถ รปภ. ทหาร ตำรวจ ข้าราชการการเมือง กำนัน ผู้ใหญ่บ้าน อบจ อบต และ งดรับพิจารณา พนักงานที่ทำงานอยู่ใน 3 จังหวัด ชายแดนภาคใต้<br>
+                                                <input type="checkbox" name="confirm_5" id="confirm_5" value="yes" class="required"> 
+                                                ท่านไม่ได้ทำงานในอาชีพเหล่านี้ อาชีพที่ธนาคารไม่รับพิจารณา : แม่บ้าน แมสเซนเจอร์ พนักงานขับรถ รปภ. ทหาร ตำรวจ ข้าราชการการเมือง กำนัน ผู้ใหญ่บ้าน อบจ อบต และ งดรับพิจารณา พนักงานที่ทำงานอยู่ใน 3 จังหวัด ชายแดนภาคใต้<br>
                                               </div>                                                                               
                                               <div class="form-group">                                                             
-                                                <input type="checkbox" name="confirm_6" id="confirm_6" value="yes" class="required"> ท่านไม่เคยติดประวัติชำระเงินล่าช้า เครดิตบูโร กับทางธนาคารหรือสถาบันการเงินใดๆ  หรือ เคลียร์ประวัติไปแล้วเกิน 1 ปีขึ้นไป<br>
+                                                <input type="checkbox" name="confirm_6" id="confirm_6" value="yes" class="required">
+                                                 ท่านไม่เคยติดประวัติชำระเงินล่าช้า เครดิตบูโร กับทางธนาคารหรือสถาบันการเงินใดๆ  หรือ เคลียร์ประวัติไปแล้วเกิน 1 ปีขึ้นไป<br>
                                               </div>                                                                               
                                               <div class="form-group">                                                             
-                                                <input type="checkbox" name="confirm_7" id="confirm_7" value="yes" class="required"> ท่านสามารถให้เจ้าหน้าที่ธนาคารติดต่อ ในเวลาทำงานได้  วันจันทร์ - วันศุกร์ 9:00 - 18:00 น.<br>
+                                                <input type="checkbox" name="confirm_7" id="confirm_7" value="yes" class="required">
+                                                 ท่านสามารถให้เจ้าหน้าที่ธนาคารติดต่อ ในเวลาทำงานได้  วันจันทร์ - วันศุกร์ 9:00 - 18:00 น.<br>
                                               </div>  
             
                                         <div class="form-group" style="text-align:center;"> 
