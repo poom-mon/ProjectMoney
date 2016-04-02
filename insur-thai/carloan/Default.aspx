@@ -9,7 +9,7 @@
                 <h1>สินเชื่อรถยนต์</h1>
                 <hr>
                 <p>มีรถก็ไม่ขาดเงิน รถช่วยได้กสิกร</p>
-                <a href="#product" class="btn btn-primary btn-xl page-scroll">เช็ควงเงินกู้และโอกาสอนุมัติ</a>
+                <a href="#product" class="btn btn-default btn-xl page-scroll">เช็ควงเงินกู้และโอกาสอนุมัติ</a>
            </div>
     </section>
 </asp:Content>

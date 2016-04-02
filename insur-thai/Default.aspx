@@ -109,7 +109,7 @@
                              <br />และครอบคลุม ทำให้คุณสามารถตัดสินใจได้ง่ายขึ้น"
                         <br />
                         <br /> 
-                        <a href="#">>> คำนวนเบี้ยประกัน..</a>
+                        <a href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=#product") %>">>> คำนวนเบี้ยประกัน..</a>
                         </div>
                        <div class="col-md-6">
                            <img  class="img-responsive" alt="รูปเปรียบเทียบเบี้ยประกัน" src="img/subicon/smart-compare.png" />

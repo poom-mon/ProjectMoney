@@ -35,7 +35,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand page-scroll" href="#page-top">Insur-Thai 
+                <a class="navbar-brand page-scroll" href="<%= this.ResolveClientUrl("~/") %>">Insur-Thai 
                 </a>
             </div>
 
@@ -77,7 +77,7 @@
     </nav>
      
 
-    <div class="header"> 
+    <div class="header" > 
         <div class="header-content">
             <div class="header-content-inner"> 
                 <asp:ContentPlaceHolder id="ctpHeadMenu" runat="server"> 

@@ -6,7 +6,7 @@
          .headcol 
           {
             position:absolute;   
-            background-color : #F05F40;  
+            background-color : #337AB7;  
             color:White;
             font-weight:bolder;
          
@@ -33,7 +33,7 @@
                 <h1>บัตรกดเงินสด</h1>
                 <hr>
                 <p>เปรียบเทียบบัตรเครดิตที่เหมาะกับคุณ</p>
-                <a href="#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
+                <a href="#product" class="btn btn-default btn-xl page-scroll">ขอสินเชื่อ</a>
            </div>  
     </section> 
 </asp:Content>
