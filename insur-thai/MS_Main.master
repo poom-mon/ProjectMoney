@@ -122,7 +122,7 @@
 
         <div class="container"> 
             <div class="row" style="padding-bottom:50px;"> 
-                <div class="col-lg-3 col-md-6 text-center">
+                <div class="col-lg-4 col-md-6 text-center">
                     <div class="service-box">
                       <a href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
                             <i class="fa fa-4x fa-car wow bounceIn text-primary"></i>
@@ -132,10 +132,10 @@
                     </div>
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-center"> 
+                <div class="col-lg-4 col-md-6 text-center"> 
                         <div class="service-box">
                              <a href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
-                                <i class="fa fa-4x fa-car wow bounceIn text-primary" data-wow-delay=".1s"></i>
+                                <i class="fa fa-4x fa-money wow bounceIn text-primary" data-wow-delay=".1s"></i>
                                 <h3>สินเชื่อรถยนต์</h3>
                                 <p class="text-muted">สินเชื่อทันใจ รถแลกเงิน</p>
                              </a>
@@ -143,7 +143,7 @@
                    
                 </div>
 
-                <div class="col-lg-3 col-md-6 text-center"> 
+                <div class="col-lg-4 col-md-6 text-center"> 
                         <div class="service-box">
                              <a href="<%= this.ResolveClientUrl("~/credit/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
                                 <i class="fa fa-4x fa-credit-card wow bounceIn text-primary" data-wow-delay=".2s"></i>
@@ -159,8 +159,7 @@
                         <h3>บัตรกดเงินสด</h3>
                         <p class="text-muted">เปรียบเทียบวงเงินโปรโมชั่น บัตรกดเงินสดที่เหมาะกับคุณ </p>
                     </div>
-                </div>--%>
-
+                </div> 
                  <div class="col-lg-3 col-md-6 text-center"> 
                         <div class="service-box">
                             <a href="<%= this.ResolveClientUrl("~/credit/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
@@ -168,9 +167,9 @@
                                 <h3>โอนหนี้</h3>
                                 <p class="text-muted">เช็ควงเงินสินเชื่อส่วนบุคคล</p>
                             </a>
-                        </div>
-                    
+                        </div> 
                 </div>  
+                   --%>
             </div>
         </div>
     </section>

@@ -6,9 +6,9 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ctpHeadMenu" runat="Server">
     <section>
       <div class="large-12 columns">
-                <h1>สินเชื่อรถยนต์</h1>
+                <h1>สินเชื่อรถยนต์</h1>  
                 <hr>
-                <p>มีรถก็ไม่ขาดเงิน รถช่วยได้กสิกร</p>
+                <p>ใน 30 วินาที มาดูกันว่าธนาคารไหนให้วงเงินสูงสุด ดอกเบี้ยต่ำสุด</p> 
                 <a href="#product" class="btn btn-default btn-xl page-scroll">เช็ควงเงินกู้และโอกาสอนุมัติ</a>
            </div>
     </section>
@@ -23,9 +23,9 @@
                         <div class="form-area formAr">
 
                               <h2 class="section-heading hMenu" style="text-align:center;">
-                                ใน 30 วินาที มาดูกันว่าธนาคารไหนให้วงเงินสูงสุด ดอกเบี้ยต่ำสุด <br />
-                                    กรอกข้อมูล รู้วงเงินกู้! ค่างวด! โอกาสอนุมัติ! ทันที
+                                กรอกข้อมูล รู้วงเงินกู้! ค่างวด! โอกาสอนุมัติ! ทันที
                                     </h2>
+
                                 <hr class="primary">
 
                                 <br style="clear:both">

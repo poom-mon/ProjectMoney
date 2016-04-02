@@ -30,10 +30,10 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ctpHeadMenu" Runat="Server">
   <section>
       <div class="large-12 columns">  
-                <h1>บัตรกดเงินสด</h1>
+                <h1>บัตรเครดิต</h1>
                 <hr>
-                <p>เปรียบเทียบบัตรเครดิตที่เหมาะกับคุณ</p>
-                <a href="#product" class="btn btn-default btn-xl page-scroll">ขอสินเชื่อ</a>
+                <p>เช็คโอกาสอนุมัติบัตรเครดิต-สินเชื่อ</p>
+                <a href="#product" class="btn btn-default btn-xl page-scroll">ประเมินโอกาส</a>
            </div>  
     </section> 
 </asp:Content>

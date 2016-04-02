@@ -8,8 +8,8 @@
       <div class="large-12 columns">  
                 <h1>ประกันภัยรถยนต์</h1>
                 <hr>
-                <p>เปรียบเทียบเบี้ยประกันภัยรถยนต์</p>
-                <a href="#product"   class="btn btn-default btn-xl page-scroll">เปรียบเทียบเบี้ยประกันภัยรถยนต์</a>
+                <p>เทียบเบี้ยประกันรถยนต์ 20 บริษัท ภายใน 30 วินาที</p>
+                <a href="#product"   class="btn btn-default btn-xl page-scroll">เทียบเบียประกันรถยนต์</a>
            </div>  
     </section> 
 </asp:Content>

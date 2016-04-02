@@ -9,9 +9,10 @@
           <div class="large-12 columns"> 
                  <div class="fadeOut owl-carousel"> 
                    <div class="item"> 
-                       <h1>เราให้บริการมากว่า 40 ปี</h1>
+                       <h1>insur-thai ยินดีให้บริการ</h1>
                        <hr>
-                       <p>เราให้บริการด้านสินเชื่อและบริการ</p>
+                       <p>เราเป็นผู้ให้บริการด้านการเงินกับลูกค้า สินเชื่อรถยนต์ ประกันรถยนต์ และบัตรเครดิต</p>
+                       
                       <%-- <a href="#about" class="btn btn-primary btn-xl page-scroll">เกียวกับเรา</a>--%>
                         <a href="#about" class="btn btn-default btn-xl page-scroll">เกียวกับเรา</a>
                    
@@ -19,21 +20,26 @@
                    <div class="item"> 
                            <h1>คำนวณเบี้ยประกันรถยนต์</h1>
                            <hr>
-                           <p>สินเชื่อประกันรถยนต์</p> 
-                           <a href="carinsurance/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">เทียบเบียประกัน</a>
+                           <p>เทียบเบี้ยประกันรถยนต์ 20 บริษัท ภายใน 30 วินาที</p> 
+                           <a href="carinsurance/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">เทียบเบียประกันรถยนต์</a>
                    </div>
                    <div class="item">
                           <h1>สินเชื่อรถยนต์</h1>
                            <hr>
-                           <p>สินเชื่อรถยนต์</p>
-                           <a href="carloan/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">ขอสินเชื่อ</a>
+                            <p>ใน 30 วินาที มาดูกันว่าธนาคารไหนให้วงเงินsสูงสุด ดอกเบี้ยต่ำสุด</p> 
+                           <a href="carloan/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">เช็ควงเงินกู้และโอกาสอนุมัติ</a>
                    </div>
+
+                     
+
+
                    <div class="item">
-                           <h1>บัตรกดเงินสด</h1>
+                           <h1>บัตรเครดิต</h1>
                            <hr>
-                           <p>บัตรกดเงินสด</p>
-                           <a href="credit/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">ขอสินเชื่อ</a>
-                   </div> 
+                           <p>เช็คโอกาสอนุมัติบัตรเครดิต-สินเชื่อ</p>
+                           <a href="credit/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">ประเมินโอกาส</a>
+                   </div>  
+
                  </div>
              </div>
     </section> 
