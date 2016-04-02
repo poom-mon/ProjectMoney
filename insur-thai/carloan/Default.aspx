@@ -69,7 +69,7 @@
         </div>
        </section>
 
-    <section style="padding-top: 0px;">
+    <section style="padding-top: 0px;background-color:#F2F2F2;">
 		<div class="container">
 			<div class="wrap-big">
 				<h2 class="blue text-center clearfix"><span class="red">3 ขั้นตอนง่ายๆ</span> ในการขอสินเชื่อ</h2>
@@ -101,16 +101,17 @@
 		</div>
 	</section>
 
-    <aside class="bg-dark" style="background-color: #F2F2F2; color: #004B93; font-size: 18px;">
+    <aside style=" font-size: 18px;">
         <div class="container text-center">
              <div class="row">
                     <div class="col-md-6">
                         <br />
 
-                            รถติดไฟแนนซ์ก็กู้ได้
+                           " รถติดไฟแนนซ์ก็กู้ได้
                            <br /> กรณีรถติดไฟแนนซ์ และมีโอกาสขอสินเชื่อในวงเงินที่มากกว่า หนี้เดิมสามารถยื่นใบสมัครสินเชื่อไว้ก่อนได้ เมื่อธนาคารอนุมัติเงินกู้แล้วลูกค้าค่อยนำเงินไปปิดภาระหนี้เดิมแล้วรับเงินก้อนใหม่
-                           <br />
+                           
                            <br /> โดยที่ลูกค้าจะมีเงินก้อนเหลือเก็บ หลังจากหักลบภาระหนี้เดิม สำหรับนำไปใช้ลงทุนทำอย่างอื่นต่อไป
+                          "
                         </div>
                        <div class="col-md-6">
                            <img  class="img-responsive" alt="รูปเปรียบเทียบเบี้ยประกัน" src="../img/subicon/car-finance.png" />

@@ -16,10 +16,10 @@
 
 <asp:Content ID="Content3" ContentPlaceHolderID="ctpMain" Runat="Server">
 <form name="aspnetForm">
-        <section   id="product"> 
+        <section   id="product" style="padding-bottom: 0px;"> 
              <div class="container"> 
               <div class="col-md-12">
-                        <div class="form-area formAr"> 
+                        <div class="form-area formAr" style="padding-bottom:10px;"> 
                               <h2 style="text-align:center;"> เปรียบเทียบเบี้ยประกัน </h2>
 
                                 <br style="clear:both">  
@@ -101,6 +101,50 @@
          </div>
         
 </form>
+
+     
+
+
+     <section style="padding-top: 50px;background-color:#F2F2F2;">
+		<div class="container">
+			<div class="wrap-big">
+				<h3 class="blue text-center clearfix">
+                    ทำประกันรถ 4 ขั้นตอนง่ายๆ ได้รับความคุ้มครองทันที</h3>
+
+                <div class="row"> 
+
+                    <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                                <i class="fa fa-4x fa-list-alt wow bounceIn text-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                                <h4>1. เลือกประกันรถที่คุณต้องการ</h4>
+                        </div>
+                    </div>
+
+                     <div class="col-lg-3 col-md-6 text-center">
+                        <div class="service-box">
+                                <i class="fa fa-4x fa-file-text-o wow bounceIn text-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                                <h4>2. กรอกใบสมัคร</h4>
+                        </div>
+                    </div>
+
+
+                     <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                            <i class="fa fa-4x fa-money wow bounceIn text-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                            <h4>3. ชำระเงินได้ ทั้งแบบผ่อนและเงินสด</h4>
+                    </div>
+                </div>
+
+                     <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                            <i class="fa fa-4x fa-automobile wow bounceIn text-primary" style="visibility: visible; animation-name: bounceIn;"></i>
+                            <h4>4. คุ้มครอง + รับกรมธรรม์ทันที</h4>
+                    </div>
+                </div>
+               </div>
+			</div>
+		</div>
+	</section>
 
 </asp:Content>
 <asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server"> 

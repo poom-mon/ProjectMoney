@@ -92,7 +92,10 @@
       </asp:ContentPlaceHolder>
              
 
-    <section class="bg-primary" id="about">
+    <section class="bg-primary" id="about" style="
+        padding-top: 50px;
+        padding-bottom: 50px;">
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
@@ -107,7 +110,7 @@
     </section>
 
 
-    <section id="services" style="padding-bottom:0;" >
+    <section id="services" style="padding-bottom:0;background-color:#F2F2F2;padding-top: 50px;" >
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -118,8 +121,7 @@
         </div>
 
         <div class="container"> 
-            <div class="row">
-
+            <div class="row" style="padding-bottom:50px;"> 
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                       <a href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
@@ -314,7 +316,7 @@
      
 
 
-    <section id="contact" >
+    <section id="contact" style=" padding-bottom: 50px; padding-top: 50px;" >
         <div class="container">
             <div class="row">  
                     <div class="col-md-12">
@@ -328,10 +330,9 @@
 						            <input type="text" class="form-control" id="tbEmail" name="email" placeholder="อีเมลล์" required>
 					            </div>
                                 <div class="form-group">
-                                <textarea class="form-control" type="textarea" id="message" placeholder="Message" maxlength="140" rows="7"></textarea>
-                                    <span class="help-block"><p id="characterLeft" class="help-block ">You have reached the limit</p></span>                    
+                                <textarea class="form-control" type="textarea" id="tAmessage" placeholder="ข้อความ" maxlength="140" rows="7"></textarea>               
                                 </div> 
-                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">Submit Form</button>
+                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">บันทึกข้อมูล</button>
                      
                                 
                            </div>
@@ -374,8 +375,9 @@
         </div>
     </section>
       
-    <div style="text-align:center;">
-         Copyright 2016 © insur-thai.com
+    <div style="text-align:center;background-color:#F2F2F2;padding:5px;">
+         Copyright 2016 © insur-thai.com <br />
+        <p style="margin-bottom: 0px;"><a href="mailto:sittiporn.jan@gmail.com">sittiporn.jan@gmail.com</a></p>
     </div>
      
     

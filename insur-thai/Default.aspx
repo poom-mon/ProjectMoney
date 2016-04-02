@@ -12,25 +12,27 @@
                        <h1>เราให้บริการมากว่า 40 ปี</h1>
                        <hr>
                        <p>เราให้บริการด้านสินเชื่อและบริการ</p>
-                       <a href="#about" class="btn btn-primary btn-xl page-scroll">เกียวกับเรา</a>
+                      <%-- <a href="#about" class="btn btn-primary btn-xl page-scroll">เกียวกับเรา</a>--%>
+                        <a href="#about" class="btn btn-default btn-xl page-scroll">เกียวกับเรา</a>
+                   
                    </div>
                    <div class="item"> 
                            <h1>คำนวณเบี้ยประกันรถยนต์</h1>
                            <hr>
                            <p>สินเชื่อประกันรถยนต์</p> 
-                           <a href="carinsurance/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-primary btn-xl page-scroll">เทียบเบียประกัน</a>
+                           <a href="carinsurance/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">เทียบเบียประกัน</a>
                    </div>
                    <div class="item">
                           <h1>สินเชื่อรถยนต์</h1>
                            <hr>
                            <p>สินเชื่อรถยนต์</p>
-                           <a href="carloan/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
+                           <a href="carloan/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">ขอสินเชื่อ</a>
                    </div>
                    <div class="item">
                            <h1>บัตรกดเงินสด</h1>
                            <hr>
                            <p>บัตรกดเงินสด</p>
-                           <a href="credit/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-primary btn-xl page-scroll">ขอสินเชื่อ</a>
+                           <a href="credit/Default.aspx?typedealer=<%=typedealer%>#product" class="btn btn-default btn-xl page-scroll">ขอสินเชื่อ</a>
                    </div> 
                  </div>
              </div>
