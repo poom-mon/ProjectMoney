@@ -29,7 +29,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LoanGuru", "LoanGuru\", "{1
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "4933"
+		VWDPort = "50232"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "document", "document", "{EB9CFFAD-D200-4380-9EAD-BAEAF0C9E588}"
@@ -60,6 +60,7 @@ EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "insur-thai", "insur-thai\", "{73854462-DDFB-473A-B037-D75E2C48A3A4}"
 	ProjectSection(WebsiteProperties) = preProject
 		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.0"
+		ProjectReferences = "{0127dee8-eac7-4a7b-b416-0f24c386d477}|MODEL_Insur_thai.dll;{8bd13414-331d-476c-b749-45d12a105237}|BAL_Insur_thai.dll;{51478B35-79AF-4D3D-A16F-A2F7D7745607}|DAL_Insur_thai.dll;{42579C9D-BB73-401E-81EF-AB02BB196370}|Helper.dll;"
 		Debug.AspNetCompiler.VirtualPath = "/insur-thai"
 		Debug.AspNetCompiler.PhysicalPath = "insur-thai\"
 		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\insur-thai\"
@@ -74,8 +75,16 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "insur-thai", "insur-thai\",
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "55731"
+		VWDPort = "50225"
 	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference_Insurthai", "Reference_Insurthai", "{FF70FEE1-F7A4-4780-9CA5-C360C179231A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL_Insur_thai", "BAL_Insur_thai\BAL_Insur_thai.csproj", "{8BD13414-331D-476C-B749-45D12A105237}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MODEL_Insur_thai", "MODEL_Insur_thai\MODEL_Insur_thai.csproj", "{0127DEE8-EAC7-4A7B-B416-0F24C386D477}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_Insur_thai", "DAL_Insur_thai\DAL_Insur_thai.csproj", "{51478B35-79AF-4D3D-A16F-A2F7D7745607}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -111,6 +120,18 @@ Global
 		{73854462-DDFB-473A-B037-D75E2C48A3A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{73854462-DDFB-473A-B037-D75E2C48A3A4}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{73854462-DDFB-473A-B037-D75E2C48A3A4}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{8BD13414-331D-476C-B749-45D12A105237}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BD13414-331D-476C-B749-45D12A105237}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BD13414-331D-476C-B749-45D12A105237}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BD13414-331D-476C-B749-45D12A105237}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0127DEE8-EAC7-4A7B-B416-0F24C386D477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0127DEE8-EAC7-4A7B-B416-0F24C386D477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0127DEE8-EAC7-4A7B-B416-0F24C386D477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0127DEE8-EAC7-4A7B-B416-0F24C386D477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51478B35-79AF-4D3D-A16F-A2F7D7745607}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51478B35-79AF-4D3D-A16F-A2F7D7745607}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51478B35-79AF-4D3D-A16F-A2F7D7745607}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51478B35-79AF-4D3D-A16F-A2F7D7745607}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -119,6 +140,9 @@ Global
 		{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
 		{6B4CB7D9-D47A-4E67-8529-EA1B4A4E8AB8} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
 		{DC12984F-5C1C-4EE2-A41B-1DAED06DBD49} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
-		{42579C9D-BB73-401E-81EF-AB02BB196370} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
+		{8BD13414-331D-476C-B749-45D12A105237} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
+		{0127DEE8-EAC7-4A7B-B416-0F24C386D477} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
+		{51478B35-79AF-4D3D-A16F-A2F7D7745607} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
+		{42579C9D-BB73-401E-81EF-AB02BB196370} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
 	EndGlobalSection
 EndGlobal

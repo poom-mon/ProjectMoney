@@ -22,6 +22,10 @@
     <!-- Custom CSS -->
    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/main.css") %>" type="text/css"> 
 
+  <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/Pvalid.css") %>" type="text/css"> 
+
+    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/email/mailtip.css") %>" type="text/css"> 
+  
   
 </head>
 <body  id="page-top">  
@@ -323,15 +327,18 @@
                             <br style="clear:both">
                                 <h3 style="margin-bottom: 25px; text-align: center;">แนะนำติชม</h3>
     				            <div class="form-group">
-						            <input type="text" class="form-control" id="tbname" name="name" placeholder="ชือ" required>
-					            </div>
+						            <input type="text" class="form-control" id="tbnameRemark" name="name" placeholder="ชือ" required>
+					            <div class="_alert-meg">ชื่อผู้ติดต่อ</div>
+                                </div>
 					            <div class="form-group">
-						            <input type="text" class="form-control" id="tbEmail" name="email" placeholder="อีเมลล์" required>
-					            </div>
+						            <input type="email" class="form-control" id="tbEmailRemark" name="email" placeholder="อีเมลล์" required>
+					                   <div class="_alert-meg">อีเมลล์</div>
+                                     </div>
                                 <div class="form-group">
-                                <textarea class="form-control" type="textarea" id="tAmessage" placeholder="ข้อความ" maxlength="140" rows="7"></textarea>               
-                                </div> 
-                            <button type="button" id="submit" name="submit" class="btn btn-primary pull-right">บันทึกข้อมูล</button>
+                                <textarea class="form-control" type="textarea" id="tAmessageRemark" placeholder="ข้อความ" maxlength="300" rows="7"></textarea>               
+                                    <div class="_alert-meg">ข้อความต้องการติดต่อ</div>
+                                  </div> 
+                            <button type="button" id="btnSubmitRemark" name="submit" class="btn btn-primary pull-right">บันทึกข้อมูล</button>
                      
                                 
                            </div>
@@ -399,6 +406,42 @@
     <script src="<%= this.ResolveClientUrl("~/js/main.js") %>"></script> 
     <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>  
 
+    <script src="<%= this.ResolveClientUrl("~/js/PValid.js") %>"></script>  
+     <script src="<%= this.ResolveClientUrl("~/js/email/jquery.mailtip.min.js") %>"></script>  
+   
      <asp:ContentPlaceHolder id="ctpScript" runat="server"></asp:ContentPlaceHolder>
+      
+    <script> 
+            $("#btnSubmitRemark").on("click", function () { 
+                var _nameRemark = $("#tbnameRemark").val()
+                var _emailremark = $("#tbEmailRemark").val()
+                var _rremark = $("#tAmessageRemark").val();
+                  
+                var _vvalid=  valid($("#tbnameRemark")); 
+                _vvalid= _vvalid &&   valid($("#tbEmailRemark"),"email"); 
+                _vvalid = _vvalid && valid($("#tAmessageRemark"),_rremark, "TextValue");
+                  
+                if (_vvalid == true) {
+                    var data = { remark_name: _nameRemark, remark_email: _emailremark, remark_message: _rremark };
+                    var obj = callAjaxAsyFailObj(data, "Default.aspx/cUpdateCustomerRemark", function (o) {
+                        if (o) {
+                            alert("ขอบคุณสำหรับความคิดเห็น แนะนำติดชม เราจะรีบดำเนินการปรับปรุงส่วนผิดพลาดค่ะ");
+
+                              $("#tbnameRemark").val("")
+                              $("#tbEmailRemark").val("")
+                              $("#tAmessageRemark").val("");
+                        }
+                    })
+
+                }
+               
+        });
+
+
+            $(window).load(function () { 
+                $("[type='email']").mailtip();
+            });
+    </script>
+   
 </body>
 </html>
