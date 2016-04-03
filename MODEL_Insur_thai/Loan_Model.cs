@@ -53,6 +53,7 @@ namespace MODEL_Insur_thai
             public string Loan_Interest { get; set; }
             public string Loan_Promotion { get; set; }  
             public string Loan_logoPath { get; set; }
+            public string Loan_fee { get; set; }
         }
 
     }

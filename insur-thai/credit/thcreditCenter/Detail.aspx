@@ -9,10 +9,10 @@
     <form id="form1" runat="server">
   <section>
       <div class="large-12 columns">  
-                <h1>บัตรกดเงินสดกสิกร</h1>
+                <h1 id="lbCardName">บัตรกดเงินสดกสิกร</h1>
                
                 <hr>
-                <p>สมัครวันนี้ รับเลย ร่ม ฟรี วอเชอ แลอื่นๆ อีกมากมาย</p>
+                <p id="lbPromotion">สมัครวันนี้ รับเลย ร่ม ฟรี วอเชอ แลอื่นๆ อีกมากมาย</p>
                 <a href="#product" class="btn btn-primary btn-xl page-scroll">กรอกแบบฟอร์มสมัคร</a>
            </div>  
     </section> 

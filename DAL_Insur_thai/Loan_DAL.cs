@@ -33,7 +33,8 @@ namespace DAL_Insur_thai
                              Loan_Amount = item.Rows[i]["Loan_Amount"].ToString(),
                              Loan_Interest = item.Rows[i]["Loan_Interest"].ToString(),
                              Loan_Promotion = item.Rows[i]["Loan_Promotion"].ToString(),
-                             Loan_logoPath = item.Rows[i]["Loan_logoPath"].ToString()
+                             Loan_logoPath = item.Rows[i]["Loan_logoPath"].ToString(),
+                             Loan_fee = item.Rows[i]["Loan_fee"].ToString()
                          });
                  }
              }
