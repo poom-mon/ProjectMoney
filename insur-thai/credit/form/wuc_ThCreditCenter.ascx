@@ -82,7 +82,16 @@
                 <div class="form-group">
                     <i class="fa fa-home"></i>
                     <label>ข้อมูลที่ทำงาน</label>
-                    <input id="tbJobs" placeholder="อาชีพ" class="form-control" type="text" />
+                    <%--<input id="tbJobs" placeholder="อาชีพ" class="form-control" type="text" />--%>
+
+                     <select name="ddlJobs" id="ddlJobs" class="form-control">
+                            <option value="0">-------อาชีพ-------</option>
+                            <option value="พนักงานบริษัท">พนักงานบริษัท</option>
+                            <option value="ข้าราชการ">ข้าราชการ</option>
+                            <option value="รัฐวิสาหกิจ">รัฐวิสาหกิจ</option>
+                            <option value="ประกอบธุรกิจส่วนตัว">ประกอบธุรกิจส่วนตัว</option>
+                         
+                        </select>
                 </div>
 
                 <div class="form-group">
@@ -164,15 +173,40 @@
                     </select>
                 </div>
 
+
+                 <div class="form-group"> 
+                     <select name="ddlWorkProvince" id="ddlPaymentSaraly" class="form-control">
+                            <option value="0">-------วิธีรับรายได้-------</option>
+                            <option value=" โอนเข้าบัญชี"> โอนเข้าบัญชี</option>
+                            <option value=" รับเป็นเงินสด/เช็ค"> รับเป็นเงินสด/เช็ค</option>
+                            <option value="อื่นๆ">อื่นๆ</option> 
+                         
+                        </select>
+                </div>
+
                 <div class="row form-group">
-                    <div class="col-xs-12 col-sm-2 clearfix">
+                    <div class="col-xs-12 col-sm-2 clearfix" id="lbAge">
                         อายุงาน
                     </div>
                     <div class="col-xs-12 col-sm-5 clearfix">
-                        <input id="tbAgeWork" placeholder="ปี" class="form-control" type="text" />
+                        <%--<input id="tbAgeWork" placeholder="ปี" class="form-control" type="text" />--%>
+                    
+                          <select name="ddlAgeWork" id="ddlAgeWork" class="form-control">
+                            <option value="0">-------ปีที่ทำงาน-------</option>
+                              <%for(int i=0;i<=35;i++){ %>
+                            <option value="<%= (i==0? "ทำงานยังไม่ถึงปี" : i.ToString()) %>"> <%= (i==0? "ทำงานยังไม่ถึงปี" : i.ToString()+" ปี") %></option>  
+                              <%} %> 
+                        </select>
+
                     </div>
                     <div class="col-xs-12 col-sm-5 clearfix">
-                        <input id="tbAgeWorkMonth" placeholder="เดือน" class="form-control" type="text" />
+                        <%--<input id="tbAgeWorkMonth" placeholder="เดือน" class="form-control" type="text" />--%>
+                     <select name="ddlAgeWorkMonth" id="ddlAgeWorkMonth" class="form-control">
+                            <option value="0">-------เดือนที่ทำงาน-------</option>
+                              <%for(int i=1;i<=12;i++){ %>
+                            <option value="<%= i %>"> <%=i %> เดือน</option>  
+                              <%} %> 
+                        </select>
                     </div>
                 </div>
 
@@ -219,7 +253,7 @@
                 </div>
 
                 <div class="form-group" style="text-align: center;">
-                    <input id="btnUpdate" type="button" class="btn btn-primary btncompare" value="สมัครบัตรเครดิต">
+                    <input id="btnUpdatePq" type="button" class="btn btn-primary btncompare" value="สมัครบัตรเครดิต">
                 </div>
 
                 <br />

@@ -25,32 +25,7 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
-  
-     <script>
-        function isElementInViewport() {
-            var scrollTop = $(window).scrollTop();
-            var viewportHeight = $(window).height();
-            $('#pt').each(function () {
-                var top = $(this).offset().top;
-                console.log(top);
-                console.log(scrollTop + viewportHeight);
-                if (scrollTop + viewportHeight >= top) {
-                    $('.submit-btn').addClass('non-snap');
-                    console.log(true);
-                } else {
-                    $('.submit-btn').removeClass('non-snap');
-                    console.log(false);
-                }
-            });
-        }
-        $(window).scroll(isElementInViewport);
-
-
-        $("#lnkBankInfo").on("click", function () { 
-            $("#ifrImagePromo").prop("src", $(this).data("link"));
-            $("#modalShowImg").modal("show");
-        });
- </script>
+    <script src="../../js/credit/formPq.js"></script> 
 </asp:Content>
 
 

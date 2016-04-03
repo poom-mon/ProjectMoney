@@ -40,6 +40,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Authen_Model.cs" />
+    <Compile Include="Loan_Model.cs" />
     <Compile Include="Remark_Model.cs" />
     <Compile Include="ManageURL_Model.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
