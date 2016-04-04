@@ -17,5 +17,10 @@ namespace BAL_Insur_thai
         {
             return DAL_Insur_thai.Loan_DAL.cLoadFilePath(data);
         }
+
+        public static bool cUpdateLoanPq(MODEL_Insur_thai.Loan_Model.loan_pq data)
+        {
+            return DAL_Insur_thai.Loan_DAL.cUpdateLoanPq(data);
+        }
     }
 }

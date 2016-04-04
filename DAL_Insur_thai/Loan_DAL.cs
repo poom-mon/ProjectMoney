@@ -69,5 +69,100 @@ namespace DAL_Insur_thai
 
             return obj;
         }
+
+        public static bool cUpdateLoanPq(MODEL_Insur_thai.Loan_Model.loan_pq data)
+        {
+            string sql = @" 
+                    if not EXISTS (select * from loan_pq where Loan_id = @Loan_id and mobile = @mobile)
+                      begin
+                          insert into loan_pq
+                           (
+                                titleName
+                                ,name
+                                ,lastname
+                                ,birthdate
+                                ,sex
+                                ,address
+                                ,mobile
+                                ,tel
+                                ,email
+                                ,jobs
+                                ,work_province
+                                ,salary
+                                ,payment_Salary
+                                ,work_year
+                                ,work_month
+                                ,work_address
+                                ,work_tel
+                                ,Applicationdate
+                                ,Loan_id
+                            )
+                            values(
+                                     @titleName
+                                    ,@name
+                                    ,@lastname
+                                    ,@birthdate
+                                    ,@sex
+                                    ,@address
+                                    ,@mobile
+                                    ,@tel
+                                    ,@email
+                                    ,@jobs
+                                    ,@work_province
+                                    ,@salary
+                                    ,@payment_Salary
+                                    ,@work_year
+                                    ,@work_month
+                                    ,@work_address
+                                    ,@work_tel
+                                    ,@Applicationdate
+                                    ,@Loan_id
+                               )    
+                      end
+                    else
+                     begin
+                            update loan_pq
+                            set titleName  = @titleName
+                                ,name      = @name
+                                ,lastname  = @lastname
+                                ,birthdate = @birthdate
+                                ,sex       = @sex
+                                ,address   = @address
+                                ,mobile    = @mobile
+                                ,tel       = @tel
+                                ,email     = @email
+                                ,jobs      = @jobs
+                                ,work_province  = @work_province
+                                ,salary         = @salary
+                                ,payment_Salary = @payment_Salary
+                                ,work_year   = @work_year
+                                ,work_month  = @work_month
+                                ,work_address = @work_address
+                                ,work_tel = @work_tel 
+                     end
+            ";
+
+            SqlCommand cmd = new SqlCommand(); 
+            cmd.Parameters.AddWithValue("@titleName",data.titleName);
+            cmd.Parameters.AddWithValue("@name", data.name);
+            cmd.Parameters.AddWithValue("@lastname",data.lastname);
+            cmd.Parameters.AddWithValue("@birthdate", data.birthdate);
+            cmd.Parameters.AddWithValue("@sex", data.sex);
+            cmd.Parameters.AddWithValue("@address",data.address);
+            cmd.Parameters.AddWithValue("@mobile",data.mobile);
+            cmd.Parameters.AddWithValue("@tel",data.tel);
+            cmd.Parameters.AddWithValue("@email",data.email);
+            cmd.Parameters.AddWithValue("@jobs",data.jobs);
+            cmd.Parameters.AddWithValue("@work_province",data.work_province);
+            cmd.Parameters.AddWithValue("@salary",data.salary);
+            cmd.Parameters.AddWithValue("@payment_Salary",data.payment_Salary);
+            cmd.Parameters.AddWithValue("@work_year",data.work_year);
+            cmd.Parameters.AddWithValue("@work_month",data.work_month);
+            cmd.Parameters.AddWithValue("@work_address",data.work_address);
+            cmd.Parameters.AddWithValue("@work_tel", data.work_tel);
+            cmd.Parameters.AddWithValue("@Loan_id", data.Loan_id);
+
+            return cSourceData.ExecuteData(sql, cmd);
+        }
     }
 }

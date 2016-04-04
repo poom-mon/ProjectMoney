@@ -9,8 +9,9 @@ using System.Web.UI.WebControls;
 public partial class Default2 : System.Web.UI.Page
 {
     protected void Page_Load(object sender, EventArgs e)
-    {  
-    }
+    {
+  
+    } 
     [WebMethod]
     public static List<MODEL_Insur_thai.Loan_Model.callLoanPackage> cLoadPackageById(MODEL_Insur_thai.Loan_Model.LoanInfo data)
     {
@@ -20,5 +21,10 @@ public partial class Default2 : System.Web.UI.Page
     public static List<MODEL_Insur_thai.Loan_Model.bank_pathfile> cLoadFilePath(MODEL_Insur_thai.Loan_Model.bank_pathfile data)
     {
         return BAL_Insur_thai.Loan_BAL.cLoadFilePath(data);
+    }
+    [WebMethod]
+    public static bool cUpdateLoanPq(MODEL_Insur_thai.Loan_Model.loan_pq data)
+    {
+        return BAL_Insur_thai.Loan_BAL.cUpdateLoanPq(data);
     }
 }

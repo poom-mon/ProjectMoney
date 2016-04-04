@@ -7,15 +7,15 @@
 
 <asp:Content ID="Content2" ContentPlaceHolderID="ctpHeadMenu" Runat="Server">
     <form id="form1" runat="server">
-  <section>
-      <div class="large-12 columns">  
-                <h1 id="lbCardName">บัตรกดเงินสดกสิกร</h1>
+      <section>
+          <div class="large-12 columns">  
+                    <h1 id="lbCardName">บัตรกดเงินสดกสิกร</h1>
                
-                <hr>
-                <p id="lbPromotion">สมัครวันนี้ รับเลย ร่ม ฟรี วอเชอ แลอื่นๆ อีกมากมาย</p>
-                <a href="#product" class="btn btn-primary btn-xl page-scroll">กรอกแบบฟอร์มสมัคร</a>
-           </div>  
-    </section> 
+                    <hr>
+                    <p id="lbPromotion">สมัครวันนี้ รับเลย ร่ม ฟรี วอเชอ แลอื่นๆ อีกมากมาย</p>
+                    <a href="#product" class="btn btn-primary btn-xl page-scroll">กรอกแบบฟอร์มสมัคร</a>
+               </div>  
+        </section> 
     </form>
 </asp:Content>
 
