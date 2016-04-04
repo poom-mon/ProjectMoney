@@ -37,7 +37,7 @@ $("#ddlJobs").on("change", function () {
 
 
 var _pid = GetQueryStringParams("pid") || "";
-//fncQPackageInfo();
+fncQPackageInfo();
 function fncQPackageInfo() { 
     var data = { Loan_id : _pid};
     var obj = callAjaxAsyFailObj(data, "detail.aspx/cLoadPackageById", function (o) {
