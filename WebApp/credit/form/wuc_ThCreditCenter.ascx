@@ -40,8 +40,8 @@
                                           <label for="name">เพศ</label>
                                           </div>
                                             <div class="col-xs-12 col-sm-10 clearfix">  
-                                                   <input type="radio" name="rd_sex"  value="1" > ชาย &nbsp;
-                                                   <input type="radio" name="rd_sex"  value="2"  > หญิง
+                                                    <input type="radio" name="rd_sex"  value="1" > ชาย &nbsp;
+                                                    <input type="radio" name="rd_sex"  value="2"  > หญิง
                                             </div> 
                                         </div>
 

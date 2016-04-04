@@ -34,19 +34,22 @@
                 <div class="row form-group">
                     <div class="col-xs-12 col-sm-4 clearfix">
                         <select name="ddlTitleName" id="ddlTitleName" class="form-control">
-                            <option value="0">คำนำหน้า</option>
+                            <option value="">คำนำหน้า</option>
                             <option value="นาย">นาย</option>
                             <option value="นางสาว">นางสาว</option>
                             <option value="นาง">นาง</option>
                         </select>
+                        <div class="_alert-meg">คำนำหน้า </div>
                     </div>
                     <div class="col-xs-12 col-sm-8 clearfix">
                         <input id="tbName" placeholder="ชื่อ-นามสกุล" class="form-control" type="text" />
+                        <div class="_alert-meg">ชื่อ-นามสกุล</div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <input id="tbAge" placeholder="อายุ" class="form-control" type="text" />
+                    <input id="tbBirthdate" placeholder="วันเกิด" class="form-control" type="text" />
+                     <div class="_alert-meg">วันเกิด</div>
                 </div>
 
                 <div class="row form-group">
@@ -56,25 +59,30 @@
                     <div class="col-xs-12 col-sm-10 clearfix">
                         <input type="radio" name="rd_sex" value="1">
                         ชาย &nbsp;
-                                                       <input type="radio" name="rd_sex" value="2">
+                        <input type="radio" name="rd_sex" value="2">
                         หญิง
+                          <div class="_alert-meg">เพศ</div>
                     </div>
                 </div>
 
                 <div class="form-group">
-                    <textarea id="taAddress" class="form-control" placeholder="ที่อยู่บ้าน/ที่พัก" rows="2" cols="20"></textarea>
+                    <textarea id="taAddress"  name="taAddress" class="form-control" placeholder="ที่อยู่บ้าน/ที่พัก" rows="2" cols="20"></textarea>
+                     <div class="_alert-meg">ที่อยู่บ้าน/ที่พัก</div>
                 </div>
 
                 <div class="form-group">
-                    <input id="tbMobile" name="alertmobile" maxlength="10" onkeypress=" return num_key(event);" class="form-control inline-sm" type="text" placeholder="โทรศัพท์ 08XXXXXXXX">
+                    <input id="tbMobile" name="tbMobile" maxlength="10" onkeypress=" return num_key(event);" class="form-control inline-sm" type="text" placeholder="โทรศัพท์ 08XXXXXXXX">
+                    <div class="_alert-meg">เบอร์โทรศัพท์</div>
                 </div> 
 
                 <div class="form-group">
                     <input id="tbTelHome" onkeypress=" return num_key(event);" maxlength="9" class="form-control input-icon tel" type="tel" placeholder="กรอกเบอร์โทรศัพท์บ้าน 02xxxxxxx">
+                    <div class="_alert-meg">เบอร์บ้าน</div>
                 </div>
 
                   <div class="form-group">
-                    <input type="text" class="form-control" id="tbEmail" name="email" placeholder="email" required>
+                    <input type="email" class="form-control" id="tbEmail" name="email" placeholder="email" required>
+                      <div class="_alert-meg">อีเมลล์</div>
                 </div>
 
 
@@ -86,18 +94,20 @@
                     <%--<input id="tbJobs" placeholder="อาชีพ" class="form-control" type="text" />--%>
 
                      <select name="ddlJobs" id="ddlJobs" class="form-control">
-                            <option value="0">-------อาชีพ-------</option>
+                            <option value="">-------อาชีพ-------</option>
                             <option value="พนักงานบริษัท">พนักงานบริษัท</option>
                             <option value="ข้าราชการ">ข้าราชการ</option>
                             <option value="รัฐวิสาหกิจ">รัฐวิสาหกิจ</option>
                             <option value="ประกอบธุรกิจส่วนตัว">ประกอบธุรกิจส่วนตัว</option>
                          
                         </select>
+
+                           <div class="_alert-meg">อาชีพ</div>
                 </div>
 
                 <div class="form-group">
                     <select name="ddlWorkProvince" id="ddlWorkProvince" class="form-control">
-                        <option value="0">-------จังหวัดที่ทำงาน-------</option>
+                        <option value="">-------จังหวัดที่ทำงาน-------</option>
                         <option value="กระบี่">กระบี่</option>
                         <option value="กาญจนบุรี">กาญจนบุรี</option>
                         <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
@@ -172,24 +182,30 @@
                         <option value="อุทัยธานี">อุทัยธานี</option>
                         <option value="อุบลราชธานี">อุบลราชธานี</option>
                     </select>
+
+                      <div class="_alert-meg">จังหวัดที่ทำงาน</div>
+
                 </div>
 
 
                   <div class="row form-group">
                     <div class="col-xs-12 col-sm-12 clearfix">
-                        <input id="tbSalary" placeholder="ฐานเงินเดือน" class="form-control" type="text" />
+                        <input id="tbSalary" maxlength="8"  onkeypress=" return num_key(event);" placeholder="ฐานเงินเดือน" class="form-control" type="text" />
+                        <div class="_alert-meg">ฐานเงินเดือน</div>
                     </div>
                 </div>
 
 
                  <div class="form-group"> 
                      <select name="ddlPaymentSaraly" id="ddlPaymentSaraly" class="form-control">
-                            <option value="0">-------วิธีรับรายได้-------</option>
+                            <option value="">-------วิธีรับรายได้-------</option>
                             <option value=" โอนเข้าบัญชี"> โอนเข้าบัญชี</option>
                             <option value=" รับเป็นเงินสด/เช็ค"> รับเป็นเงินสด/เช็ค</option>
                             <option value="อื่นๆ">อื่นๆ</option> 
                          
                         </select>
+                         <div class="_alert-meg">วิธีรับรายได้</div>
+
                 </div>
 
                 <div class="row form-group">
@@ -202,9 +218,11 @@
                           <select name="ddlAgeWork" id="ddlAgeWork" class="form-control">
                             <option value="0">-------ปีที่ทำงาน-------</option>
                               <%for(int i=0;i<=35;i++){ %>
-                            <option value="<%= (i==0? "ทำงานยังไม่ถึงปี" : i.ToString()) %>"> <%= (i==0? "ทำงานยังไม่ถึงปี" : i.ToString()+" ปี") %></option>  
+                            <option value="<%= (i==0? "1000" : i.ToString()) %>"> <%= (i==0? "ทำงานยังไม่ถึงปี" : i.ToString()+" ปี") %></option>  
                               <%} %> 
                         </select>
+
+                         <div class="_alert-meg">อายุงาน</div>
 
                     </div>
                     <div class="col-xs-12 col-sm-5 clearfix">
@@ -222,9 +240,11 @@
 
                 <div class="form-group">
                     <textarea id="taWork" class="form-control" placeholder="ที่อยู่ที่ทำงาน" rows="2" cols="20"></textarea>
+                    <div class="_alert-meg">ที่อยู่ที่ทำงาน</div>
                 </div>
                 <div class="form-group">
                     <input id="tbTelWork" onkeypress=" return num_key(event);" maxlength="9" class="form-control input-icon tel" type="tel" placeholder="กรอกเบอร์โทรศัพที่ทำงาน 02xxxxxxx">
+                <div class="_alert-meg">เบอร์โทรที่ทำงาน</div>
                 </div>
 
                 <%--<div class="form-group">

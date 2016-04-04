@@ -1,5 +1,18 @@
 ﻿
 
+function scroll2Err() {
+    var $el_error = $('._alert').first();
+
+    //var idCollapse = $el_error.closest('.collapse').prop('id');
+    //showCollapse('#' + idCollapse, false);
+
+    $('html, body').animate({ scrollTop: $el_error.offset().top - 40 }, 360);
+    $el_error.focus();
+
+    if (!$el_error.prop('id').indexOf('ddl_') == 0) {
+        $el_error[0].setSelectionRange(0, $el_error.val().length);
+    }
+}
 
 function valid(el, type, objValue) {
     var v = true;
@@ -36,6 +49,7 @@ function validElement(el, type,objValue) {
         case 'split_name': v = validCusName(el); break;
         case 'idcard': v = validIDCard(val); break;
         case 'mobile': v = validMobile(val); break;
+        case 'tel': v = validHomeTel(val); break; 
         case 'email': v = validEmail(val); break;
 
         case 'noregister': v = validNoRegister(el); break;
@@ -72,7 +86,9 @@ function getSplitName(id) {
         , lname: l
     };
 }
-
+function getObjVal($el) {
+    return $.trim($el.val());
+}
 function ValidTextByValue(objValue) {
     var v = true; 
     if ($.trim(objValue).length > 0)
@@ -150,4 +166,21 @@ function showCollapse(id, type) {
 
     $el.siblings('.collapse-bar').addClass('active');
 
+}
+function validHomeTel(str) {
+    var regex1 = /^02[0-9]{7}$/;
+    var regex2 = /^0[3,4,5,7]{1}[2-9]{1}[0-9]{6}$/;
+    return (regex1.test(str) || regex2.test(str))
+}
+function validEmail(str) {
+    var email_check = /^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,6}$/i;
+    if (email_check.test(str.replace(/^\s+|\s+$/g, '')) === false || str.length < 1) {
+        return false;
+    } else {
+        return true;
+    }
+}
+function validMobile(str) {
+    var regex = /^0[6,8,9]{1}[0-9]{8}$/;
+    return regex.test(str);
 }

@@ -37,7 +37,7 @@ $("#ddlJobs").on("change", function () {
 
 
 var _pid = GetQueryStringParams("pid") || "";
-fncQPackageInfo();
+//fncQPackageInfo();
 function fncQPackageInfo() { 
     var data = { Loan_id : _pid};
     var obj = callAjaxAsyFailObj(data, "detail.aspx/cLoadPackageById", function (o) {
@@ -78,11 +78,7 @@ function fncLoadFile() {
 
     })
 }
-
-
-function fncValid() {
-  
-}
+ 
 
 function LoadObjForm() {
      _objForm = {
@@ -106,7 +102,7 @@ function LoadObjForm() {
     }
 }
 
-function fCal() {
+function fncfirstCal() {
     LoadObjForm();
     var _v =true;
     var _objfcal = "";
@@ -152,8 +148,70 @@ function fCal() {
     return _v; 
 }
 
+function fncValid() {
+    var v = true;
+    v = v && validElement($("#ddlTitleName")) 
+    v = v && validElement($("#tbName"))
+    v = v && validElement($("#tbName"), "split_name");
+    v = v && validElement($("#tbBirthdate"))
+
+    if (v) {
+        if ($("input[name='rd_sex']").prop("checked") == false) {
+            v = v && false;
+            $("input[name='rd_sex']").addClass('_alert');
+        }
+        else {
+            v = v && true;
+            $("input[name='rd_sex']").removeClass('_alert');
+        }
+    }
+
+    v = v && validElement($("#taAddress"))
+    v = v && validElement($("#tbMobile"), "mobile")
+    v = v && validElement($("#tbTelHome"),"tel")
+    v = v && validElement($("#tbEmail"))
+    v = v && validElement($("#ddlJobs"))
+    v = v && validElement($("#ddlWorkProvince"))
+    v = v && validElement($("#tbSalary"))
+    v = v && validElement($("#ddlPaymentSaraly"))
+
+    if (v) {
+        if (_objForm.YearWork == "0" && _objForm.MonthWork == "0") {
+            v = v && false;
+            $("#ddlAgeWork").addClass('_alert');
+        }
+        else {
+            v = v && true;
+            $("#ddlAgeWork").removeClass('_alert');
+        }
+    }
+
+    if (_objForm.YearWork == "1000") { 
+        v = v && validElement($("#ddlAgeWorkMonth"))
+    }
+     
+         
+    v = v && validElement($("#taWork"))
+    v = v && validElement($("#tbTelWork"), "tel")   
+
+
+    if (v == false) {
+        scroll2Err();
+    }
+    return v;
+}
+
+
 $("#btnUpdatePq").on("click", function () {
-    console.log(fCal());
+    LoadObjForm();
+
+    if (fncValid() == true) {
+        if (fncfirstCal()) {
+            windows.location.href = "thankyou.aspx";
+        }
+    } 
+
+
 });
 
 $("#ckConfirm,#chkBulo").on("click", function () { 
@@ -163,7 +221,14 @@ $("#ckConfirm,#chkBulo").on("click", function () {
         $("#btnUpdatePq").css("display", "none");
     }
 });
+ 
 
-
-
+$('#tbBirthdate').datepicker
+ ({
+        autoclose: true
+        , format: 'dd/mm/yyyy'
+        , startDate: '-20y'
+        ,endDate : '+55y'
+});
+   
 
