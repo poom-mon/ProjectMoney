@@ -23,7 +23,26 @@
         {
             width:90px !important;
             padding-left:80px !important;
-         }
+         }  
+         
+        .snap-bottom {
+              position: fixed;
+              left: 0;
+              bottom: 0;
+              width: 100%;
+              padding: 10px 0;
+              z-index: 999;
+              background-color: #fff;
+              box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+          }
+            .snap-bottom.non-snap {
+              padding: 0;
+              position: static;
+              box-shadow: none;
+              margin-top: 15px;
+            }
+
+
     </style>
 </asp:Content>
 

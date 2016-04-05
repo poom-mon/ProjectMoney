@@ -374,7 +374,7 @@
 							        </table>
 							 </div>  
                          <!-- end credit -->
-                    </div> 
+                    </div>  
                         <div class="tab-pane fade in" id="tab2">
                             
                             <div class="table-responsive">
@@ -419,9 +419,18 @@
                         </div>
 
                     </div>
-                </div>
+                </div> 
+            </div>
 
-        </div>
+            <div class="col-sm-12">  
+                    <div id="pt"></div> 
+	                    <div class="form-group btnsubmit submit-btn snap-bottom" style="display:">
+		                    <div class="container">
+			                    <a class="button-ui button-green" id='btnSubmit'>เลือกแผนนี้</a>
+			                    <p class="freeText">สมัครวันนี้ <span class="red">ฟรี e-Voucher</span> ส่วนลดที่พักและสปา</p>
+		                    </div>
+	                    </div>
+                 </div> 
 
     </section>
 
