@@ -1,6 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MS_Main.master" AutoEventWireup="true" CodeFile="thankyou.aspx.cs" Inherits="Default2" %>
 
-<%@ Register src="../form/wuc_ThCreditCenter.ascx" tagname="wuc_ThCreditCenter" tagprefix="uc1" %>
+<%@ Register src="../form/wuc_creditForm.ascx" tagname="wuc_ThCreditCenter" tagprefix="uc1" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">  
 </asp:Content>

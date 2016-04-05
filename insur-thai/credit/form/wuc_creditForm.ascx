@@ -1,4 +1,4 @@
-﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="wuc_ThCreditCenter.ascx.cs" Inherits="credit_form_wuc_ThCreditCenter" %>
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeFile="wuc_creditForm.ascx.cs" Inherits="credit_form_wuc_ThCreditCenter" %>
 
 <style>
     .content > p {
