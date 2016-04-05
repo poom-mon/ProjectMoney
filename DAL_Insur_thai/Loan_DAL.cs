@@ -73,7 +73,7 @@ namespace DAL_Insur_thai
         public static bool cUpdateLoanPq(MODEL_Insur_thai.Loan_Model.loan_pq data)
         {
             string sql = @" 
-                    if not EXISTS (select * from loan_pq where Loan_id = @Loan_id and mobile = @mobile)
+                    if not EXISTS (select * from loan_pq where Loan_id = @Loan_id and mobile = @mobile and datediff(d,applicationdate,getdate()) = 0)
                       begin
                           insert into loan_pq
                            (
@@ -115,7 +115,7 @@ namespace DAL_Insur_thai
                                     ,@work_month
                                     ,@work_address
                                     ,@work_tel
-                                    ,@Applicationdate
+                                    ,getdate()
                                     ,@Loan_id
                                )    
                       end
@@ -146,7 +146,7 @@ namespace DAL_Insur_thai
             cmd.Parameters.AddWithValue("@titleName",data.titleName);
             cmd.Parameters.AddWithValue("@name", data.name);
             cmd.Parameters.AddWithValue("@lastname",data.lastname);
-            cmd.Parameters.AddWithValue("@birthdate", data.birthdate);
+            cmd.Parameters.AddWithValue("@birthdate",   data.birthdate );
             cmd.Parameters.AddWithValue("@sex", data.sex);
             cmd.Parameters.AddWithValue("@address",data.address);
             cmd.Parameters.AddWithValue("@mobile",data.mobile);

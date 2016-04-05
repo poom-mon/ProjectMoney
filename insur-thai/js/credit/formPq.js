@@ -197,12 +197,13 @@ $("#btnUpdatePq").on("click", function () {
 
     if (fncValid() == true) {
         if (fncfirstCal()) {
-
+             
+            var _bdate = _objForm.birthdate;
             var data = { 
                titleName : _objForm.titleName, 
                name : _objForm.name,
                lastname : _objForm.lname,
-               birthdate : _objForm.birthdate , 
+               birthdate: _bdate.split("/")[2] + "-" + _bdate.split("/")[1] + "-" + _bdate.split("/")[0],
                sex  : _objForm.Sex,
                address  : _objForm.Address,
                mobile : _objForm.Mobile,
@@ -218,9 +219,10 @@ $("#btnUpdatePq").on("click", function () {
                work_tel  : _objForm.WorkTel ,
                Loan_id: _pid
             };
+            console.log(data);
             var obj = callAjaxAsyFailObj(data, "detail.aspx/cUpdateLoanPq", function (o) {
                 console.log(o)
-                windows.location.href = "thankyou.aspx";
+               // windows.location.href = "thankyou.aspx";
             })
           
         }

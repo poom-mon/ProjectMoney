@@ -25,10 +25,13 @@
 </asp:Content>
 
 <asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
+     
+    <script src="../js/PValid.js"></script>
+    <link href="../css/datetime/date.css" rel="stylesheet" />
+    <script src="../js/datetime/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="../js/credit/formPq.js"></script> 
 
-    <link href="../../css/datetime/date.css" rel="stylesheet" type="text/css" />
-    <script src="../../js/datetime/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="../../js/credit/formPq.js"></script> 
+
 
 </asp:Content>
 

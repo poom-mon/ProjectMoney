@@ -4,8 +4,7 @@
  * For details, see http://www.apache.org/licenses/LICENSE-2.0.
  */
  
- @import url(http://fonts.googleapis.com/css?family=Kanit); 
-  
+ @import url(/insur-thai/font/Kanit/font-kanit.css); 
 html,
 body {
     width: 100%;
