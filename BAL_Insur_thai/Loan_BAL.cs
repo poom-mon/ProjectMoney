@@ -22,5 +22,10 @@ namespace BAL_Insur_thai
         {
             return DAL_Insur_thai.Loan_DAL.cUpdateLoanPq(data);
         }
+
+        public static List<MODEL_Insur_thai.Loan_Model.callLoanPackage> cLoanPackage(MODEL_Insur_thai.Loan_Model.callLoanPackage data)
+        {
+            return DAL_Insur_thai.Loan_DAL.cLoanPackage(data);
+        }
     }
 }

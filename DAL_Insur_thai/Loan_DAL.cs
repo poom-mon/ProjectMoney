@@ -164,5 +164,55 @@ namespace DAL_Insur_thai
 
             return cSourceData.ExecuteData(sql, cmd);
         }
+
+        public static List<MODEL_Insur_thai.Loan_Model.callLoanPackage> cLoanPackage(MODEL_Insur_thai.Loan_Model.callLoanPackage data)
+        {
+
+            SqlCommand cmd = new SqlCommand();
+            cmd.Parameters.AddWithValue("@Loan_typeId", data.Loan_typeId);
+            string sql = @"  
+                    select 
+                    a.Loan_Id,
+                    c.bank_Name,
+                    a.Loan_Name,
+                    a.Loan_Amount,
+                    a.Loan_Interest,
+                    a.Loan_Promotion,
+                    a.Loan_Descript,
+                    c.bank_LogoPath,
+                    a.Loan_smLogo,
+                    a.Loan_typeId
+                      from 
+                    Loan_info a inner join 
+                    Loan_typeInfo b on(a.loan_typeId= b.loan_typeId ) 
+                    inner join bank_info c on(a.bank_Id = c.bank_Id)
+                    where b.Loan_typeId =@Loan_typeId
+            ";
+             
+            var item = cSourceData.GetData(sql, cmd).Tables[0];
+            List<MODEL_Insur_thai.Loan_Model.callLoanPackage> obj = new List<MODEL_Insur_thai.Loan_Model.callLoanPackage>();
+            if (item.Rows.Count > 0)
+            {
+                for (var i = 0; i < item.Rows.Count; i++)
+                {
+                    obj.Add(
+                        new MODEL_Insur_thai.Loan_Model.callLoanPackage
+                        {
+                           Loan_Id =  Convert.ToInt32(item.Rows[i]["Loan_Id"].ToString()) , 
+                           bank_Name = item.Rows[i]["bank_Name"].ToString(),
+                           Loan_Name = item.Rows[i]["Loan_Name"].ToString(),
+                           Loan_Amount = item.Rows[i]["Loan_Amount"].ToString(),
+                           Loan_Interest= item.Rows[i]["Loan_Interest"].ToString(),
+                           Loan_Promotion= item.Rows[i]["Loan_Promotion"].ToString(),
+                           Loan_Descript = item.Rows[i]["Loan_Descript"].ToString(),
+                           bank_LogoPath = item.Rows[i]["bank_LogoPath"].ToString(),
+                           Loan_logoPath  = item.Rows[i]["Loan_smLogo"].ToString() ,
+                           Loan_typeId =  Convert.ToInt32( item.Rows[i]["Loan_typeId"].ToString())
+                        });
+                }
+            }
+
+            return obj;
+        }
     }
 }

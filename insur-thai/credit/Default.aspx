@@ -71,21 +71,21 @@
         <div class="container">
                     <div class="btn-pref btn-group btn-group-justified btn-group-lg" role="group" aria-label="...">
                     <div class="btn-group" role="group">
-                            <button type="button" id="stars" class="btn btn-primary btnCardType"  data-cardType="credit"  href="#tab1" data-toggle="tab">
+                            <button type="button" id="stars" class="btn btn-primary btnCardType"  data-cardType="1"  href="#tab1" data-toggle="tab">
                             <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span> 
                             <div>บัตรเครดิต</div> 
                             <%--  <div class="hidden-xs">บัตรเครดิต</div> --%>
                         </button>  
                     </div>
                     <div class="btn-group" role="group">
-                        <button type="button" id="favorites" class="btn btn-default btnCardType"  data-cardType="cash"   href="#tab2" data-toggle="tab">
+                        <button type="button" id="favorites" class="btn btn-default btnCardType"  data-cardType="2"   href="#tab2" data-toggle="tab">
                             <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
                             <div>บัตรกดเงินสด</div>
                                 <%--<span class="hidden-xs">บัตรกดเงินสด</span>--%>
                         </button>
                     </div>
                     <div class="btn-group" role="group">
-                        <button type="button" id="following" class="btn btn-default btnCardType"  data-cardType="loan" href="#tab3" data-toggle="tab">
+                        <button type="button" id="following" class="btn btn-default btnCardType"  data-cardType="3" href="#tab3" data-toggle="tab">
                             <span class="glyphicon glyphicon-credit-card" aria-hidden="true"></span>
                             <div>โอนหนี้</div>
                              <%-- <span class="hidden-xs">โอนหนี้</span> --%>
@@ -111,10 +111,9 @@
 										        <th>โปรโมชั่น </th>	 
 										        <th class="dvDetailTbPc">รายละเอียด </th>	
 									        </tr>
-                                            <tbody id="tbRowsCredit">
-                                            <%for (int i = 0; i <= 5; i++)
-                                              { %>
-									        <tr>
+                                            <tbody id="tbRowsCredit"> 
+
+									       <%-- <tr>
                                                  <td   class="headcol"  align="left">
                                                    <i class="glyphicon glyphicon-edit"></i>  สมัคร  <br />
                                                    <i class="glyphicon glyphicon-new-window"></i>  รายละเอียด
@@ -145,8 +144,8 @@
                                                    <i class="glyphicon glyphicon-edit"></i>  สมัคร  <br />
                                                    <i class="glyphicon glyphicon-new-window"></i>  รายละเอียด 
                                                 </td>  
-									        </tr>  
-                                            <%} %>
+									        </tr>   --%>
+
 								        </tbody>
 							        </table>
 							 </div> 

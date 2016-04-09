@@ -27,4 +27,12 @@ public partial class Default2 : System.Web.UI.Page
     {
         return BAL_Insur_thai.Loan_BAL.cUpdateLoanPq(data);
     }
+     [WebMethod]
+    public static List<MODEL_Insur_thai.Loan_Model.callLoanPackage> cLoanPackage(MODEL_Insur_thai.Loan_Model.callLoanPackage data)
+    {
+        return BAL_Insur_thai.Loan_BAL.cLoanPackage(data);
+    }
+
+    
+
 }
