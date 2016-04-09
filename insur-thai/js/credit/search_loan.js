@@ -37,7 +37,7 @@ function RenderPackage() {
                 str += "     </td>";
                 str += "     <td align=\"left\">";
                 str += "         <img src=\"" + _gObject[i].Loan_logoPath + "\"  />";
-                str += "<b>" + _gObject[i].Loan_Name + "</b>";
+                str += " <a    href=\"" + _gObject[i].urlRegist + "\" target='_blank'><b>" + _gObject[i].Loan_Name + "</b></a>";
                 str += "     </td> ";
                 str += "     <td  align=\"left\">" + (_gObject[i].Loan_Amount == "N" ? "-" : _gObject[i].Loan_Amount) + "</td>";
                 str += "     <td  align=\"left\">" + _gObject[i].Loan_Interest + "</td>";
@@ -54,7 +54,7 @@ function RenderPackage() {
         }
     }
     else { 
-        console.log("no");
+        //console.log("no");
         str = "<tr><td colspan='7'>ไม่พบรายการ</td></tr>";
     }
 
@@ -96,7 +96,7 @@ function RenderPackage() {
     });
 }
 function fncDataText(text) {
-    console.log(text.length, text.length < 257)
+   // console.log(text.length, text.length < 257)
     if (text.length > 0) {
         if (text.length < 257)
             return text;
