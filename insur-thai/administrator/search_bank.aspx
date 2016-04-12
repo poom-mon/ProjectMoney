@@ -15,25 +15,7 @@
     
     <div class="container">
         <table  class="tbLayout" style="width: 90%;margin:10px;">
-        <tr>
-            <td>
-               ธนาคาร
-            </td>
-            <td>
-                 <select  class="form-control" id="ddlCreditType">
-                    <option value="">เครดิต</option>
-                    <option value="">บัตรกดเงินสด</option>
-                    <option value="">สินเชื่อ</option>
-                 </select>
-            </td>
-            
-            <td>
-              
-            </td>
-             <td>
-                
-            </td>
-        </tr>  
+           
         <tr> 
             <td colspan="4"  > 
                  <input id="btn_serch" type="button" class="btn btn-default" value="ค้นหา" /> 
@@ -58,19 +40,7 @@
                             <th>จัดการ</th> 
 						</tr>
 					</thead>
-					<tbody id="tbSearchBank">
-                     <% for (int i = 0; i < 20; i++)
-                        { %>
-						<tr>
-							<td>1</td>
-                            <td>logo</td>
-							<td>ธนาคารไทยพานิชย์</td> 
-                            <td> 
-                                <a type="button" class="btn btn-link">แก้ไข</a>
-                                <a type="button" class="btn btn-link">ลบ</a>
-                            </td> 
-						</tr> 
-                        <%} %>
+					<tbody id="tbSearchBank"> 
 
 						</tbody>
 					</table>

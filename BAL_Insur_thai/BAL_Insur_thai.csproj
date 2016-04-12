@@ -39,6 +39,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bank_BAL.cs" />
     <Compile Include="Loan_BAL.cs" />
     <Compile Include="ManageURL_BAL.cs" />
     <Compile Include="Authen_BAL.cs" />

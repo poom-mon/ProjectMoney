@@ -90,7 +90,7 @@
 
   
     <script src="<%= this.ResolveClientUrl("~/js/jquery/jquery.1.11.0.min.js") %>"></script>
-     
+      <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>
        
      <script language="JavaScript"> 
 //       function autoResize(id) {
