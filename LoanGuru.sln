@@ -29,7 +29,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "LoanGuru", "LoanGuru\", "{1
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50232"
+		VWDPort = "56111"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "document", "document", "{EB9CFFAD-D200-4380-9EAD-BAEAF0C9E588}"
@@ -54,7 +54,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "WebApp", "WebApp\", "{0A208
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "4936"
+		VWDPort = "56118"
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "insur-thai", "insur-thai\", "{73854462-DDFB-473A-B037-D75E2C48A3A4}"
@@ -75,7 +75,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "insur-thai", "insur-thai\",
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "50225"
+		VWDPort = "61008"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference_Insurthai", "Reference_Insurthai", "{FF70FEE1-F7A4-4780-9CA5-C360C179231A}"
@@ -140,9 +140,9 @@ Global
 		{A8E2F6A1-805E-4D6A-9D2E-FDBECBBB4C96} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
 		{6B4CB7D9-D47A-4E67-8529-EA1B4A4E8AB8} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
 		{DC12984F-5C1C-4EE2-A41B-1DAED06DBD49} = {AA0E80A8-EBCE-46C1-90B3-A79F0059A567}
+		{42579C9D-BB73-401E-81EF-AB02BB196370} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
 		{8BD13414-331D-476C-B749-45D12A105237} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
 		{0127DEE8-EAC7-4A7B-B416-0F24C386D477} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
 		{51478B35-79AF-4D3D-A16F-A2F7D7745607} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
-		{42579C9D-BB73-401E-81EF-AB02BB196370} = {FF70FEE1-F7A4-4780-9CA5-C360C179231A}
 	EndGlobalSection
 EndGlobal

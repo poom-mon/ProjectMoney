@@ -61,7 +61,7 @@
     <!-- Main Menu -->
     <div class="side-menu-container">
         <ul class="nav navbar-nav">
-
+             <li><a name="LinkInfo"   href="search_bank.aspx"><span class="glyphicon glyphicon-send"></span> จัดการข้อมูลธนาคาร</a></li>
             <li><a name="LinkInfo"   href="search_content.aspx"><span class="glyphicon glyphicon-send"></span> จัดการข้อมูลบัตรเครดิต</a></li>
             <li ><a name="LinkInfo"  href="search_user.aspx"><span class="glyphicon glyphicon-plane"></span> จัดการข้อมูลผู้เข้าใช้ระบบ</a></li>
            <li ><a name="LinkInfo"  href="login.aspx"><span class="glyphicon glyphicon-plane"></span> ออกจากระบบ</a></li>
