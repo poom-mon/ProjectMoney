@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
+using System.Web.Services;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
@@ -11,4 +12,16 @@ public partial class administrator_Default : System.Web.UI.Page
     {
 
     }
+    [WebMethod]
+    public static bool cUpdateBank(MODEL_Insur_thai.bank_Model data)
+    {
+        data.update_user = HttpContext.Current.Session["username"] != null ?  HttpContext.Current.Session["username"].ToString() : "" ;
+        return BAL_Insur_thai.Bank_BAL.cUpdateBank(data);
+    }
+    [WebMethod]
+    public static MODEL_Insur_thai.bank_Model cLoadBankFormById(MODEL_Insur_thai.bank_Model data)
+    { 
+        return BAL_Insur_thai.Bank_BAL.cLoadBankFormById(data);
+    }
+    
 }

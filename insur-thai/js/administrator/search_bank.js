@@ -25,7 +25,7 @@ function fncPackage() {
                 str += "                   <td>" + o[i].bank_Name + "</td> ";
                 str += "                   <td> ";
                 str += "                       <a type=\"button\" href='manage_bank.aspx?id=" + o[i].bank_Id + "' class=\"btn btn-link\">แก้ไข</a>";
-                str += "                       <a type=\"button\" class=\"btn btn-link\">ลบ</a>";
+               // str += "                       <a type=\"button\" class=\"btn btn-link\">ลบ</a>";
                 str += "                   </td> ";
                 str += "               </tr> ";
             }

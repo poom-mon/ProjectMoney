@@ -11,5 +11,15 @@ namespace BAL_Insur_thai
         {
             return DAL_Insur_thai.bank_DAL.cSearchBank(data);
         }
+
+        public static bool cUpdateBank(MODEL_Insur_thai.bank_Model data)
+        {
+            return DAL_Insur_thai.bank_DAL.cUpdateBank(data);
+        }
+
+        public static MODEL_Insur_thai.bank_Model cLoadBankFormById(MODEL_Insur_thai.bank_Model data)
+        {
+            return DAL_Insur_thai.bank_DAL.cLoadBankFormById(data);
+        }
     }
 }

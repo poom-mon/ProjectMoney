@@ -14,8 +14,16 @@ public partial class administrator_login : System.Web.UI.Page
     } 
     [WebMethod]
     public static bool checkLogin(MODEL_Insur_thai.Authen_Model.login data)
-    { 
-        return BAL_Insur_thai.Authen_BAL.checkLogin(data);
+    {
+        bool objReturn = BAL_Insur_thai.Authen_BAL.checkLogin(data);
+        if (objReturn)
+        {
+            HttpContext.Current.Session["username"] = data.username;
+
+            return true;
+        }
+        else
+            return false; 
     }
     
 

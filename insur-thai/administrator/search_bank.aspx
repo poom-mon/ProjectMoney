@@ -50,12 +50,19 @@
 		 </div>   
     </div>
       
-</asp:Content>
+
+    
+    
+
+     
 
 
+</asp:Content> 
 <asp:Content ID="Content3" ContentPlaceHolderID="footer" Runat="Server"> 
 
     <script src="../js/administrator/search_bank.js"></script>
+
+  
 </asp:Content>
 
 
