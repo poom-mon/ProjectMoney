@@ -1,13 +1,11 @@
 ﻿
-var _objItem;
-
 searchBank()
 function searchBank() {
     var str = "";
     var data = {};
     var obj = callAjaxAsyFailObj(data, "search_bank.aspx/cSearchBank", function (o) {
         console.log("bank", o)
-        SetOptionListDdl($("#ddl_bank"),"--เลือกธนาคาร--",'')
+        SetOptionListDdl($("#ddl_bank"),"--เลือกธนาคาร--",0)
         if (o.length > 0) {
             for (var i = 0; i < o.length; i++) {
                 SetOptionListDdl($("#ddl_bank"), o[i].bank_Name, o[i].bank_Id)
@@ -47,8 +45,14 @@ function onBlur() {
     document.getElementById('eMessage').innerHTML = this.name + ' lost focus';
 }
 
- 
+
+var i = 0;
+
 $("#btnLink").on("click", function () {
+
+    if ($("#tbFilePath").css("display") === "none") {
+        $("#tbFilePath").css("display", "block");
+    }
      
     var str = "<tr id='tr"+i+"'><td></td>";
     str += "<td><input class=\"form-control _obPathFile\" type=\"text\">  <div class=\"_alert-meg\">filepath </div> </td>";
@@ -64,55 +68,26 @@ $("#btnLink").on("click", function () {
     });
 });
 
-function renderObjItem() {
-    return _objItem = { 
-        bank_Id : Math.round($("#ddl_bank").val()),
-        Loan_typeId : Math.round($("#ddlCreditType").val()),
-        Loan_Name : $("#tbCard").val(),
-        Loan_Descript: $("#taProduct").val(),
-        Loan_Amount: $("#tbAmount").val(),
-        Loan_Interest: $("#tbInterest").val(),
-        Loan_Promotion: $("#taPromotion").val(), 
-        Loan_urlReference: $("#taRefertb").val(),
-        Loan_fee: $("#tbFee").val(),
-        Loan_logoPath: $("#tbBigLogo").val(),
-        Loan_smLogo: $("#tbSmallLogo").val(),
-        Loan_status: $("#ddlStatus").val(),
-        Loan_Id: ( GetQueryStringParams("id") || 0)
-    }
-}
-$("#btnSave").on("click", function () {
-    if (fncValidFile()) {
-        _objItem = renderObjItem();
-        console.log(_objItem);
+$("#btnSave").on("click", function () { 
+    $('#trBodypath > tr').each(function () { 
+        $this = $(this)
 
-        var obj = callAjaxAsyFailObj(_objItem, "manage_credit.aspx/cUpdateCredit", function (o) {
-            console.log("load success", o);
-            alert("บันทึกข้อมูลสำเร็จ");
-        });
+        var _$$filepath = $this.find("input._obPathFile");
+        var _$$filename = $this.find("input._obFileName");
+        var _$$filedesc = $this.find("input._obFileDesc");
 
-    } 
-});
-$("#btnCancel").on("click", function () {
-    window.location.href = "search_credit.aspx";
+        if (fncValidFile(_$$filepath, _$$filename, _$$filedesc)) {
+            // save path file   
+            console.log(_$$filepath.val(), _$$filename.val(), _$$filedesc.val());
+        }
+    });    
 });
 
-function fncValidFile() {
-    var v = true; 
-    v = v && validElement($("#ddl_bank"));
-     v = v && validElement($("#tbAmount"));
-     v = v && validElement($("#ddlCreditType"));
-     v = v && validElement($("#tbCard"));
-     v = v && validElement($("#taProduct"));
-   
-     v = v && validElement($("#tbInterest"));
-     v = v && validElement($("#taPromotion"));
-     v = v && validElement($("#taRefertb"));
-     v = v && validElement($("#tbFee"));
-     v = v && validElement($("#tbBigLogo"));
-     v = v && validElement($("#tbSmallLogo"));
-     v = v && validElement($("#ddlStatus"));
-
+function fncValidFile(_obj1,_obj2,_obj3) {
+    var v = true;
+    v = v && validElement(_obj1)
+    v = v && validElement(_obj2)
+    v = v && validElement(_obj3)
      
     if (v == false) {
         scroll2Err();

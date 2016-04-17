@@ -10,9 +10,9 @@
     <link href="<%= this.ResolveClientUrl("~/css/bootstrap.min.css") %>" rel="stylesheet" />
     <link href="<%= this.ResolveClientUrl("~/css/Admin/admin.css") %>" rel="stylesheet" />
 
-     <link href="<%= this.ResolveClientUrl("~/css/bootstrap.min.css") %>" rel="stylesheet" />
+     <link href="<%= this.ResolveClientUrl("~/css/Pvalid.css") %>" rel="stylesheet" />
      <link href="<%= this.ResolveClientUrl("~/css/table_model.css") %>" rel="stylesheet" />
-
+     
 
 </head>
 <body>
@@ -63,6 +63,7 @@
         <ul class="nav navbar-nav">
              <li><a name="LinkInfo"   href="search_bank.aspx"><span class="glyphicon glyphicon-send"></span> จัดการข้อมูลธนาคาร</a></li>
             <li><a name="LinkInfo"   href="search_credit.aspx"><span class="glyphicon glyphicon-send"></span> จัดการข้อมูลบัตรเครดิต</a></li>
+            <li><a name="LinkInfo"   href="search_filepath.aspx"><span class="glyphicon glyphicon-send"></span> จัดการข้อมูลfile detail upload</a></li>
             <li ><a name="LinkInfo"  href="search_user.aspx"><span class="glyphicon glyphicon-plane"></span> จัดการข้อมูลผู้เข้าใช้ระบบ</a></li>
            <li ><a name="LinkInfo"  href="login.aspx"><span class="glyphicon glyphicon-plane"></span> ออกจากระบบ</a></li>
 
@@ -89,9 +90,11 @@
     </form>  
 
   
-    <script src="<%= this.ResolveClientUrl("~/js/jquery/jquery.1.11.0.min.js") %>"></script>
-      <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>
-       
+        <script src="<%= this.ResolveClientUrl("~/js/jquery/jquery.1.11.0.min.js") %>"></script>
+        <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>
+        <script src="<%= this.ResolveClientUrl("~/js/PValid.js") %>"></script>
+
+
      <script language="JavaScript"> 
 //       function autoResize(id) {
 //           var newheight;

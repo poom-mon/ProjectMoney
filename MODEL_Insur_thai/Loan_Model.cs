@@ -33,6 +33,12 @@
             public string update_date { get; set; }
 
             public string Loan_logoPath { get; set; }
+
+            public string Loan_fee { get; set; }
+
+            public string Loan_smLogo { get; set; }
+
+            public string Loan_status { get; set; }
         }
 
         public class bank_pathfile
@@ -68,7 +74,6 @@
         public class callLoanPackage
         {
             public int? Loan_typeId { get; set; }
-             
 
             public int? Loan_Id { get; set; }
 
@@ -93,10 +98,6 @@
             public string bank_Name { get; set; }
 
             public string bank_LogoPath { get; set; }
-            
-
-            
-
         }
 
         public class loan_pq

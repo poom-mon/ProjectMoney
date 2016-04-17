@@ -268,12 +268,56 @@ namespace DAL_Insur_thai
 
             return obj;
         }
+         
+         
+        public static bool cUpdateCredit(MODEL_Insur_thai.Loan_Model.LoanInfo data)
+        { 
+            SqlCommand cmd = new SqlCommand(); 
+            cmd.Parameters.AddWithValue("@Loan_Id", data.Loan_Id);
+            cmd.Parameters.AddWithValue("@bank_Id", data.bank_Id);
+            cmd.Parameters.AddWithValue("@Loan_typeId", data.Loan_typeId); 
+            cmd.Parameters.AddWithValue("@Loan_Name", data.Loan_Name); 
+             cmd.Parameters.AddWithValue("@Loan_Descript", data.Loan_Descript); 
+             cmd.Parameters.AddWithValue("@Loan_Amount", data.Loan_Amount); 
+             cmd.Parameters.AddWithValue("@Loan_Interest", data.Loan_Interest); 
+             cmd.Parameters.AddWithValue("@Loan_Promotion", data.Loan_Promotion); 
+             cmd.Parameters.AddWithValue("@Loan_urlReference", data.Loan_urlReference); 
+             cmd.Parameters.AddWithValue("@Loan_fee", data.Loan_fee); 
+             cmd.Parameters.AddWithValue("@Loan_logoPath", data.Loan_logoPath); 
+             cmd.Parameters.AddWithValue("@Loan_smLogo", data.Loan_smLogo); 
+             cmd.Parameters.AddWithValue("@Loan_status", data.Loan_status);
+             cmd.Parameters.AddWithValue("@update_user", data.update_user);
 
+            string sql = @"  
 
+               if not exists (select * from  Loan_info where Loan_Id = @Loan_Id)
+                     begin
+                         insert into Loan_info(bank_Id ,Loan_typeId ,Loan_Name,Loan_Descript,Loan_Amount,Loan_Interest,Loan_Promotion,Loan_urlReference,Loan_fee,Loan_logoPath,Loan_smLogo,Loan_status ,create_user,update_user,create_date,update_date)
+                         values(@bank_Id ,@Loan_typeId ,@Loan_Name,@Loan_Descript,@Loan_Amount,@Loan_Interest,@Loan_Promotion,@Loan_urlReference,@Loan_fee,@Loan_logoPath,@Loan_smLogo,@Loan_status ,@update_user,@update_user,getdate(),getdate())
+                     end
+                    else
+                     begin
+                         update Loan_info
+                         set    bank_Id     = @bank_Id,
+                                Loan_typeId = @Loan_typeId,
+                                Loan_Name   = @Loan_Name,
+                                Loan_Descript = @Loan_Descript,
+                                Loan_Amount  = @Loan_Amount,
+                                Loan_Interest = @Loan_Interest,
+                                Loan_Promotion = @Loan_Promotion, 
+                                Loan_urlReference= @Loan_urlReference,
+                                Loan_fee  =  @Loan_fee,
+                                Loan_logoPath= @Loan_logoPath,
+                                Loan_smLogo= @Loan_smLogo,
+                                Loan_status = @Loan_status,
+                                update_user = @update_user,
+                                update_date = getdate()
+                          where Loan_Id = @Loan_Id
 
-        public static List<MODEL_Insur_thai.Loan_Model.callLoanPackage> cSearchCredit(MODEL_Insur_thai.bank_Model data)
-        {
-            throw new NotImplementedException();
+                     end
+            ";
+            return cSourceData.ExecuteData(sql, cmd);
         }
+
     }
 }
