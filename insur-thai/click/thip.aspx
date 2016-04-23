@@ -14,6 +14,7 @@
                              Text="Label"></asp:Label>
 
                  <br />************************************
+                 <div   > 
                    <br /> [carloan thinsur]: 
                  <br />
 
@@ -22,7 +23,7 @@
                         <asp:button runat="server"  text="set carloan" ID="BtnSetCarloan" 
                              onclick="BtnSetCarloanThinsur_Click" />
                     <br />  
-
+                 </div>
 
                  <br /> [carloan creditshop]: 
                  <br /> 
@@ -33,6 +34,7 @@
                     <br />  
 
 
+                 <div  style="display:none;">
                  <br /> [carloan loanshop]: 
                  <br />
 
@@ -41,17 +43,17 @@
                         <asp:button runat="server"  text="set carloan3" ID="btnLoanShop" 
                              onclick="BtnSetCarloanShop_Click" />
                     <br />  
-
+                     </div>
 
 
              </div> 
           </form>   
-          <form action="http://www.silkspan.com/car_loan/detail_carloan.asp?typedealer=thinsur" method="post" target="my_frame_carLoan"> 
-                car loan <br />
+          <form   action="http://www.silkspan.com/car_loan/detail_carloan.asp?typedealer=thinsur" method="post" target="my_frame_carLoan"> 
+                car loan thinsur: <br />
                  เหลือคลิกอีก : <asp:Label ID="lbThinsur" runat="server" Text="Label"></asp:Label>
                  <input type="submit" runat="server" value="click_carloan" />
           </form>
-          <iframe name="my_frame_carLoan" ></iframe> 
+          <iframe    name="my_frame_carLoan" ></iframe> 
     <br />
     ######################################################## 
             <br />
@@ -68,12 +70,12 @@
             <br />
 
 
-          <form action="http://www.silkspan.com/car_loan/detail_carloan.asp?typedealer=loanshop" method="post" target="my_frame_carLoan3"> 
+          <form  style="display:none;" action="http://www.silkspan.com/car_loan/detail_carloan.asp?typedealer=loanshop" method="post" target="my_frame_carLoan3"> 
                 LoanShop <br />
                     เหลือคลิกอีก : <asp:Label ID="lbLoanShop" runat="server" Text="Label"></asp:Label>
                     <input id="Submit3" type="submit" runat="server" value="click_carloan" />
             </form>
-            <iframe name="my_frame_carLoan3" ></iframe> 
+            <iframe   style="display:none;" name="my_frame_carLoan3" ></iframe> 
             <br />
             ########################################################
             <br />

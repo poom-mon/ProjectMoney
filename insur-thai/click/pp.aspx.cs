@@ -51,12 +51,12 @@ public partial class test_Default : System.Web.UI.Page
     }
      protected void BtnSetCarloanCredit_Click(object sender, EventArgs e)
     { 
-        Application["CarLoanSetCreditshop"] = tbthinsur.Text;
+        Application["CarLoanSetCreditshop"] = tbCreditshop.Text;
         lbCreditshop.Text = tbCreditshop.Text;  
     }
      protected void BtnSetCarloanShop_Click(object sender, EventArgs e)
     { 
-        Application["CarLoanSetLoanshop"] = tbthinsur.Text;
+        Application["CarLoanSetLoanshop"] = tbloanshop.Text;
         lbLoanShop.Text = tbloanshop.Text;  
     }
      protected void btnSetCredit_Click(object sender, EventArgs e)

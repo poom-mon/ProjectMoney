@@ -12,7 +12,7 @@ public partial class test_Default : System.Web.UI.Page
          lbIpaddress.Text=GetUserIP();  
 
        if (!Page.IsPostBack)
-       {
+       {    
            if (Application["CarLoanSetThinsur"] != null)
             {
                 Application["CarLoanSetThinsur"] = Convert.ToInt32(Application["CarLoanSetThinsur"]) - 1;
@@ -46,13 +46,13 @@ public partial class test_Default : System.Web.UI.Page
         lbThinsur.Text = tbthinsur.Text;  
     }
      protected void BtnSetCarloanCredit_Click(object sender, EventArgs e)
-    { 
-        Application["CarLoanSetCreditshop"] = tbthinsur.Text;
+    {
+        Application["CarLoanSetCreditshop"] = tbCreditshop.Text;
         lbCreditshop.Text = tbCreditshop.Text;  
     }
      protected void BtnSetCarloanShop_Click(object sender, EventArgs e)
-    { 
-        Application["CarLoanSetLoanshop"] = tbthinsur.Text;
+    {
+        Application["CarLoanSetLoanshop"] = tbloanshop.Text;
         lbLoanShop.Text = tbloanshop.Text;  
     }
     

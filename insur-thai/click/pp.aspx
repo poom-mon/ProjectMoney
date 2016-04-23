@@ -14,15 +14,17 @@
                              Text="Label"></asp:Label>
 
                  <br />************************************
-                   <br /> [carloan thinsur]: 
-                 <br />
+                 <div >
+                       <br /> [carloan thinsur]: 
+                     <br />
 
-                        set carloan&nbsp; :<asp:textbox   
-                             runat="server" ID="tbthinsur"></asp:textbox>
-                        <asp:button runat="server"  text="set carloan" ID="BtnSetCarloan" 
-                             onclick="BtnSetCarloanThinsur_Click" />
-                    <br />  
-
+                            set carloan&nbsp; :<asp:textbox   
+                                 runat="server" ID="tbthinsur"></asp:textbox>
+                            <asp:button runat="server"  text="set carloan" ID="BtnSetCarloan" 
+                                 onclick="BtnSetCarloanThinsur_Click" />
+                        <br /> 
+                      
+                 </div>
 
                  <br /> [carloan creditshop]: 
                  <br /> 
@@ -57,7 +59,8 @@
 
 
              </div> 
-          </form>   
+          </form>  
+     
           <form action="http://www.silkspan.com/car_loan/detail_carloan.asp?typedealer=thinsur" method="post" target="my_frame_carLoan"> 
                 car loan <br />
                  เหลือคลิกอีก : <asp:Label ID="lbThinsur" runat="server" Text="Label"></asp:Label>
