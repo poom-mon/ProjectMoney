@@ -15,7 +15,7 @@ public partial class administrator_Default : System.Web.UI.Page
     [WebMethod]
     public static bool cUpdateBank(MODEL_Insur_thai.bank_Model data)
     {
-        data.update_user = HttpContext.Current.Session["username"] != null ?  HttpContext.Current.Session["username"].ToString() : "" ;
+        data.update_user = HttpContext.Current.Session["userId"] != null ? HttpContext.Current.Session["userId"].ToString() : "0";
         return BAL_Insur_thai.Bank_BAL.cUpdateBank(data);
     }
     [WebMethod]

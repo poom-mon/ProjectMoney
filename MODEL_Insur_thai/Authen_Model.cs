@@ -8,6 +8,7 @@ namespace MODEL_Insur_thai
     public class Authen_Model
     {
         public class login{
+            public string logid { get; set; }
             public string username { get; set; }
             public string password { get; set; }
         }

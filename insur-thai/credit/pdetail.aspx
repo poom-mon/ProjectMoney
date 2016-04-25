@@ -1,0 +1,38 @@
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MS_Main.master" AutoEventWireup="true" CodeFile="pdetail.aspx.cs" Inherits="Default2" %>
+
+<%@ Register src="~/credit/form/wuc_th_credit.ascx" tagname="wuc_creditForm" tagprefix="uc1" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">  
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="ctpHeadMenu" Runat="Server">
+    <form id="form1" runat="server">
+      <section>
+          <div class="large-12 columns">  
+                    <h1 id="lbCardName">บัตรกดเงินสดกสิกร</h1>
+               
+                    <hr>
+                    <p id="lbPromotion">สมัครวันนี้ รับเลย ร่ม ฟรี วอเชอ แลอื่นๆ อีกมากมาย</p>
+                    <a href="#product" class="btn btn-primary btn-xl page-scroll">กรอกแบบฟอร์มสมัคร</a>
+               </div>  
+        </section> 
+    </form>
+</asp:Content>
+
+
+<asp:Content ID="Content3" ContentPlaceHolderID="ctpMain" Runat="Server">    
+     <uc1:wuc_creditForm ID="wuc_ThCreditCenter1" runat="server" />   
+</asp:Content>
+
+<asp:Content ID="Content4" ContentPlaceHolderID="ctpScript" Runat="Server">
+     
+    <script src="../js/PValid.js"></script>
+    <link href="../css/datetime/date.css" rel="stylesheet" />
+    <script src="../js/datetime/bootstrap-datepicker.js" type="text/javascript"></script>
+    <script src="../js/credit/formpq_thcredit.js"></script> 
+
+
+
+</asp:Content>
+
+

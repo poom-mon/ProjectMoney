@@ -24,7 +24,7 @@ function RenderPackage() {
     if (_gObject.length > 0) { 
         for (var i = 0; i < _gObject.length; i++) { 
             if (_gObject[i].Loan_typeId == _cardType) { 
-                _gObject[i].urlRegist = "../credit/detail.aspx?pid=" + _gObject[i].Loan_Id; 
+                _gObject[i].urlRegist = "../credit/pdetail.aspx?pid=" + _gObject[i].Loan_Id; 
                 str += " <tr>";
                 str += "         <td   class=\"headcol\"   align=\"left\">";
                 //str += "         <i class=\"glyphicon glyphicon-edit\"  data-id=\"" + _gObject[i].Loan_Id + "\" ></i>  สมัคร  <br />";
@@ -33,10 +33,10 @@ function RenderPackage() {
                 str += "     <td  class=\"blankCol\" >";
                 str += "     </td>";
                 str += "     <td    class=\"tdcol\"  align=\"left\">  ";
-                str += "         <img src=\"" + _gObject[i].bank_LogoPath + "\"  />";
+                str += "         <img src=\"" +fncCheckLogoUrl( _gObject[i].bank_LogoPath) + "\"  />";
                 str += "     </td>";
                 str += "     <td align=\"left\">";
-                str += "         <img src=\"" + _gObject[i].Loan_logoPath + "\"  />";
+                str += "         <img src=\"" + fncCheckLogoUrl(_gObject[i].Loan_logoPath) + "\"  /><br />";
                 str += " <a    href=\"" + _gObject[i].urlRegist + "\" target='_blank'><b>" + _gObject[i].Loan_Name + "</b></a>";
                 str += "     </td> ";
                 str += "     <td  align=\"left\">" + (_gObject[i].Loan_Amount == "N" ? "-" : _gObject[i].Loan_Amount) + "</td>";
@@ -94,19 +94,26 @@ function RenderPackage() {
             $(this).html($(this).data("text").substring(0, 257) + "<font style='color:red;'>ขยาย</font>");
         }
     });
-}
-function fncDataText(text) {
-   // console.log(text.length, text.length < 257)
-    if (text.length > 0) {
-        if (text.length < 257)
-            return text;
-        else
-            return "<div style='cursor:pointer;' class='dvText' data-text='" + text + "' data-flaghide='true'>" + text.substring(0, 257) + "<font style='color:red;cursor:pointer;'>ขยาย</font></div>";
-    }
-    else
-        return "-";
 } 
-$(".btnCardType").on("click", function () { 
-    _cardType = Math.round($(this).attr("data-cardType"));
-    callPageDb();
-});
+function fncCheckLogoUrl(path) {
+    if (window.location.host.indexOf("localhost") > -1) {
+        return path;
+    } else {
+        return path.replace("/insur-thai", "");
+    } 
+}
+    function fncDataText(text) {
+        // console.log(text.length, text.length < 257)
+        if (text.length > 0) {
+            if (text.length < 257)
+                return text;
+            else
+                return "<div style='cursor:pointer;' class='dvText' data-text='" + text + "' data-flaghide='true'>" + text.substring(0, 257) + "<font style='color:red;cursor:pointer;'>ขยาย</font></div>";
+        }
+        else
+            return "-";
+    } 
+    $(".btnCardType").on("click", function () { 
+        _cardType = Math.round($(this).attr("data-cardType"));
+        callPageDb();
+    });

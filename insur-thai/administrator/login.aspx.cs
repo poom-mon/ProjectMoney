@@ -15,11 +15,11 @@ public partial class administrator_login : System.Web.UI.Page
     [WebMethod]
     public static bool checkLogin(MODEL_Insur_thai.Authen_Model.login data)
     {
-        bool objReturn = BAL_Insur_thai.Authen_BAL.checkLogin(data);
-        if (objReturn)
+        List<MODEL_Insur_thai.Authen_Model.login> objReturn = BAL_Insur_thai.Authen_BAL.checkLogin(data);
+        if (objReturn.Count > 0 )
         {
-            HttpContext.Current.Session["username"] = data.username;
-
+            HttpContext.Current.Session["username"] = objReturn[0].username;
+            HttpContext.Current.Session["userId"] = objReturn[0].logid;
             return true;
         }
         else

@@ -10,7 +10,7 @@
 var phone = "", email = "", yearCar = "", brandCar = "", modelCar = "";
 var $Email = $("#tbEmail"), $Mobile = $("#tbMobile");
 var $Yearcar = $("#ddlYearCar"), $BrandCar = $("#ddlBandCar"), $ModelCar = $("#ddlModelcar");
-
+var $typedealer = "thinsur";
 
 
 $(window).load(function () {
@@ -22,7 +22,7 @@ $(window).load(function () {
 silkspan.o({
     p: "car_insurance.asp",
     pl: "car_insurance.aspx",
-    t: "thinsur",
+    t: $typedealer,
     s: "car-insurance",
     m: ""
 });
@@ -129,10 +129,9 @@ function carinfo() {
             $("input[name='alertemail']").val(email)
             $("input[name='Model']").val(__ob.model)
             $("input[name='car_category']").val(__ob.car_category)
+             
 
-
-
-            document.aspnetForm.action = "http://www.silkspan.com/carinsur/insurance/compare.aspx";
+            document.aspnetForm.action = "http://www.silkspan.com/carinsur/insurance/compare.aspx?typedealer=" + $typedealer;
             document.aspnetForm.method = "post";
             document.aspnetForm.submit();
 

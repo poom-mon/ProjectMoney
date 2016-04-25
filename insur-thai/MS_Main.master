@@ -57,7 +57,9 @@
                     </li>
 
                     <li>
-                        <a class="page-scroll" href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product">สินเชื่อรถยนต์</a>
+                           <a class="page-scroll" href="http://silkspan.com/car_loan/detail_carloan.asp?tag=&typedealer=thinsur">สินเชื่อรถยนต์</a>
+                        
+                     <%--   <a class="page-scroll" href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product">สินเชื่อรถยนต์</a>--%>
                     </li>
                      <li>
                         <a class="page-scroll" href="<%= this.ResolveClientUrl("~/carinsurance/Default.aspx?typedealer=") %><%= typedealer %>#product">เปรียบเทียบประกันรถยนต์</a>
@@ -138,7 +140,9 @@
 
                 <div class="col-lg-4 col-md-6 text-center"> 
                         <div class="service-box">
-                             <a href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product"> 
+                           
+                             <a href="http://silkspan.com/car_loan/detail_carloan.asp?tag=&typedealer=thinsur">
+                             <%-- <a href="<%= this.ResolveClientUrl("~/carloan/Default.aspx?typedealer=") %><%= typedealer %>#product"> --%>
                                 <i class="fa fa-4x fa-money wow bounceIn text-primary" data-wow-delay=".1s"></i>
                                 <h3>สินเชื่อรถยนต์</h3>
                                 <p class="text-muted">สินเชื่อทันใจ รถแลกเงิน</p>

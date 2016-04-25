@@ -10,7 +10,7 @@
 var phone = "", email = "", yearCar = "", brandCar = "", modelCar ="";
 var $Email = $("#tbEmail"), $Mobile = $("#tbMobile");
 var $Yearcar = $("#ddlYearCar"), $BrandCar = $("#ddlBandCar"), $ModelCar = $("#ddlModelcar");
-
+var $typedealer = "thinsur";
 
 
 
@@ -23,7 +23,7 @@ $(window).load(function () {
 silkspan.o({
     p: "car_insurance.asp",
     pl: "car_insurance.aspx",
-    t: "thinsur",
+    t: $typedealer  ,
     s: "car-insurance",
     m: ""
 });
