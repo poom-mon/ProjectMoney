@@ -319,5 +319,14 @@ namespace DAL_Insur_thai
             return cSourceData.ExecuteData(sql, cmd);
         }
 
+
+        public static System.Data.DataTable cLoadpq()
+        {
+            SqlCommand cmd = new SqlCommand();  
+                string sql = @"
+                    select * from   pploan.Loan_pq  
+                ";
+            return cSourceData.GetData(sql, cmd).Tables[0];
+        }
     }
 }
