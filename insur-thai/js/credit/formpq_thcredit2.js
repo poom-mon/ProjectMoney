@@ -3,13 +3,36 @@
 var _objForm; 
 var _pid = "1";
 
+LoadDate() 
+
+function LoadDate() {
+    var _date = new Date()
+    $selectPicker.init({
+        idDay: '#ddlDayBirth'
+            , idMonth: '#ddlMonthBirth'
+            , idYear: '#ddlYearBirth'
+            , language: 'th'
+            , minDate: ((_date.getFullYear() - 50) + "-01-01")
+            , maxDate: ((_date.getFullYear() - 15) + "-01-01") //'2022-05-12'
+          //  , timeAfter: '16.00' 
+        /*, holiday: {
+             startDate: '2016-04-20'
+             , endDate: '2016-05-10'
+             , toDate: '2016-05-05' 
+        } */
+    });
+    $("#ddlDayBirth").prepend($('<option disabled selected></option>').val('').html('-- เลือกวันเกิด --'));
+    $('#ddlMonthBirth').prepend($('<option disabled selected></option>').val('').html('-- เลือกเดือนเกิด --'));
+    $('#ddlYearBirth').prepend($('<option disabled selected></option>').val('').html('-- เลือกปีเกิด --'));
+ }
+
 function LoadObjForm() {
     _objForm = {
         titleName: $("#ddlTitleName").val() || ""
-        , name: $("#tbName").val().split(" ")[0] || ""
-        , lname: $("#tbName").val().split(" ")[1] || ""
+        , name: getSplitName("#tbName").fname
+        , lname: getSplitName("#tbName").lname
         , birthdate: $("#tbBirthdate").val() || ""
-        , Sex: ""
+        , Sex: ($("#ddlTitleName").val() == "นาย" ? "ชาย" : "หญิง")
         , Address: $("#taAddress").val() || ""
         , Mobile: $("#tbMobile").val() || ""
         , Email: $("#tbEmail").val() || ""
@@ -76,8 +99,11 @@ function fncValid() {
     v = v && validElement($("#ddlTitleName"))
     v = v && validElement($("#tbName"))
     v = v && validElement($("#tbName"), "split_name");
-    v = v && validElement($("#tbBirthdate"))
 
+    //v = v && validElement($("#tbBirthdate"))
+    v = v && validElement($("#ddlDayBirth"))
+    v = v && validElement($("#ddlMonthBirth"))
+    v = v && validElement($("#ddlYearBirth"))
     
 
     v = v && validElement($("#taAddress"))
@@ -118,12 +144,13 @@ $("#btnUpdatePq").on("click", function () {
     if (fncValid() == true) {
         if (fncfirstCal()) {
              
-            var _bdate = _objForm.birthdate;
+            var _bdate = (Math.round(getObjVal($('#ddlYearBirth'))) - 543) + "-" + ((getObjVal($('#ddlMonthBirth')).length == 1 ? "0" : "") + getObjVal($('#ddlMonthBirth'))) + "-" + ((getObjVal($('#ddlDayBirth')).length == 1 ? "0" : "") + getObjVal($('#ddlDayBirth')))
+            //_objForm.birthdate;
             var data = { 
                titleName : _objForm.titleName, 
                name : _objForm.name,
                lastname : _objForm.lname,
-               birthdate: _bdate.split("/")[2] + "-" + _bdate.split("/")[1] + "-" + _bdate.split("/")[0],
+               birthdate: _bdate,//_bdate.split("/")[2] + "-" + _bdate.split("/")[1] + "-" + _bdate.split("/")[0],
                sex  : _objForm.Sex,
                address  : _objForm.Address,
                mobile : _objForm.Mobile,
@@ -141,7 +168,7 @@ $("#btnUpdatePq").on("click", function () {
             };
             console.log(data);
             var obj = callAjaxAsyFailObj(data, "../Detail.aspx/cUpdateLoanPq", function (o) {
-                 window.location.href = "thankyou.aspx";
+                  window.location.href = "thankyou.aspx";
             })
           
         }

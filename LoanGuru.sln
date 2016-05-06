@@ -70,7 +70,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "insur-thai", "insur-thai\",
 		Release.AspNetCompiler.ForceOverwrite = "true"
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
-		VWDPort = "60068"
+		VWDPort = "60602"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Reference_Insurthai", "Reference_Insurthai", "{FF70FEE1-F7A4-4780-9CA5-C360C179231A}"

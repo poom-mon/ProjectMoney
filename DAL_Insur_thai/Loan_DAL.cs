@@ -138,7 +138,8 @@ namespace DAL_Insur_thai
                                 ,work_year   = @work_year
                                 ,work_month  = @work_month
                                 ,work_address = @work_address
-                                ,work_tel = @work_tel 
+                                ,work_tel = @work_tel
+                            where mobile = @mobile 
                      end
             ";
 

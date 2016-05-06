@@ -5,91 +5,25 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
-    <meta name="description" content="บัตรเครดิต กดเงินสด ผ่อนสินค้า กรุงศรีเฟิร์สช้อยส์ สมัครง่าย อนุมัติไว โปรโมชั่นโดนใจมากมาย" /> 
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8" /> 
-    <meta http-equiv="pragma" content="no-cache" />  
-    <meta http-equiv="content-script-type" content="text/javascript" /> 
-    <meta name="keywords" content="กรุงศรี,เฟิร์สช้อยส์,สมัครง่าย,อนุมัติทันใจ,ทำบัตรเครดิต,บัตรกดเงินสด,บัตรผ่อนสินค้า" /> 
-
+    <meta name="description" content="บัตรเครดิต กดเงินสด ผ่อนสินค้า กรุงศรีเฟิร์สช้อยส์ สมัครง่าย อนุมัติไว โปรโมชั่นโดนใจมากมาย" />
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="pragma" content="no-cache" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="กรุงศรี,เฟิร์สช้อยส์,สมัครง่าย,อนุมัติทันใจ,ทำบัตรเครดิต,บัตรกดเงินสด,บัตรผ่อนสินค้า" />
 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
-    <link href="<%= this.ResolveClientUrl("~/css/bootstrap.min.css") %>" rel="stylesheet" /> 
-    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/Pvalid.css") %>" type="text/css"> 
-
-    <style>
-        .navbar-default {
-            color: #554242;
-            background-color: #123350;
-            background-image: url(http://www.firstchoice.co.th/Images/Other/BG_Platinum_Head_1600x120.html);
-            background-size: 1900px auto;
-            background-position: center center;
-            -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.3);
-            transition: all .5s ease-in-out;
-        }
-
-        .register-card-form {
-            margin: 35px 0;
-        }
-
-        h1, h2, h3, h4, h5 {
-            font-family: "KrungsriCondensedMedium",Arial!important;
-            font-weight: normal;
-        }
-
-        .register-card-form .ZoneRegOnline {
-            width: 300px;
-        }
-
-        .ZoneRegOnline {
-            width: 100%;
-            height: auto;
-            overflow: hidden;
-            margin-top: 20px;
-        }
-
-        .register-card-form .onlineCard {
-            width: 140px;
-            margin-right: 10px;
-        }
-
-        .onlineCard {
-            width: 50%;
-            float: left;
-            padding: 0 15px;
-            margin-bottom: 10px;
-            height: auto;
-        }
-
-        .onlineCard_img {
-            max-width: 100%;
-            min-height: 72px;
-        }
-
-        .register-card-form .onlineCard_txt {
-            font-size: 12px;
-        }
-
-        .onlineCard_txt {
-            width: 100%;
-            text-align: left;
-            height: auto;
-            overflow: hidden;
-            font-size: 12px;
-            font-family: sukhumvit_setthin, Tahoma !important;
-            line-height: 1.4em !important;
-            color: #666;
-            font-weight: normal;
-            margin: 0;
-            padding-top: 10px;
-        }
-    </style>
+    <link href="<%= this.ResolveClientUrl("~/css/bootstrap.min.css") %>" rel="stylesheet" />
+    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/Pvalid.css") %>" type="text/css">
+    <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/credit/firstchoice.css") %>" type="text/css">
+       <link rel="stylesheet" href="<%= this.ResolveClientUrl("~/css/checkbox.css") %>" type="text/css">
 </head>
 <body>
     <form id="form1" runat="server">
         <div>
 
-            <div class="navbar navbar-default navbar-static-top" style="padding:20px;">
+            <div class="navbar navbar-default navbar-static-top" style="padding: 20px; margin-bottom: 0px;">
                 <div class="container">
                     <div class="navbar-header">
 
@@ -99,16 +33,16 @@
                             </a>
                         </div>
                     </div>
-                   <%-- <div class="Mastermenu">
+                    <%-- <div class="Mastermenu">
                         <span class="navbar-menu">เมนูหลัก</span>
                         <button class="navbar-toggle" data-target=".navbar-collapse" data-toggle="collapse" type="button"></button>
                     </div>--%>
-                     
+
                     <div id="menu" class="navbar-collapse collapse" style="margin-left: 0px;">
 
                         <ul class="nav navbar-nav">
                             <li class="hidden-xs " style="display: none;">
-                                <a class="navigatorh nav-home blR" href="/home.aspx">Home</a>
+                                <a class="navigatorh nav-home blR " href="/home.aspx">Home</a>
                             </li>
                     </div>
                     <div class="clear"></div>
@@ -117,9 +51,9 @@
 
             <div class="row">
                 <div class="container">
-                    <div class="col-xs-12">
+                    <div class="col-xs-12" style="padding-left: 0px; padding-right: 0px;">
                         <div id="content-35" class="breadcrumb">
-                            <a href="http://www.firstchoice.co.th/th/Home.html">หน้าหลัก &gt; </a><span class="CMSBreadCrumbsCurrentItem">สมัครบัตร</span>
+                            <a class="navmenu" href="http://www.firstchoice.co.th/th/Home.html">หน้าหลัก &gt; </a><span class="navmenu">สมัครบัตร</span>
                         </div>
                     </div>
                 </div>
@@ -128,16 +62,26 @@
             <div class="row">
                 <div class="container">
                     <div class="register-card-form">
-                        <h1 style="padding: 0;"><i class="iregis">สมัครบัตร</i></h1>
+                        <%--<h1 style="padding: 0;"><i class="iregis">สมัครบัตร</i></h1>--%>
                         <div class="ZoneRegOnline">
                             <div class="onlineCard">
                                 <div class="onlineCard_img">
                                     <img src="http://www.firstchoice.co.th/Images/icon/card1.html">
                                 </div>
-                                <div class="onlineCard_txt">
-                                    บัตรเครดิตกรุงศรี<br>
-                                    เฟิร์สช้อยส์ วีซ่า แพลทินัม
+
+                                   <div class="onlineCard_txt">
+                                    บัตรเครดิตกรุงศรี  เฟิร์สช้อยส์ วีซ่า แพลทินัม
                                 </div>
+
+                             <%--   <div class="onlineCard_txt">  
+                                        <div class="checkbox">
+                                          <label style="padding:0px">
+                                            <input type="checkbox" value="" checked>
+                                            <span class="cr"><i class="cr-icon glyphicon glyphicon-ok"></i></span>
+                                           <b>  บัตรเครดิตกรุงศรี  เฟิร์สช้อยส์ วีซ่า แพลทินัม</b>
+                                          </label>
+                                        </div> 
+                                </div>--%>
                             </div>
                             <div class="onlineCard">
                                 <div class="onlineCard_img">
@@ -155,11 +99,22 @@
                     </div>
                 </div>
             </div>
+
+            <div style="text-align: center; background-color: #F2F2F2; padding: 5px;    font-size: 10px;">
+                Copyright 2016 © insur-thai.com
+                <br />
+                <p style="margin-bottom: 0px;"><a href="mailto:sittiporn.jan@gmail.com">sittiporn.jan@gmail.com</a></p>
+            </div>
         </div>
-    </form>
-     <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>  
-      <script src="<%= this.ResolveClientUrl("~/js/jquery/jquery.1.11.0.min.js") %>"></script> 
-    <asp:ContentPlaceHolder ID="cptFooter" runat="server"> 
+    </form> 
+    
+    
+     <script src="<%= this.ResolveClientUrl("~/js/jquery/jquery.1.11.0.min.js") %>"></script>
+
+    <script src="<%= this.ResolveClientUrl("~/js/cHelper.js") %>"></script>
+     <script src="<%= this.ResolveClientUrl("~/js/datetime/select-datepicker.js") %>"></script>
+     
+     <asp:ContentPlaceHolder ID="cptFooter" runat="server">
     </asp:ContentPlaceHolder>
 </body>
 </html>

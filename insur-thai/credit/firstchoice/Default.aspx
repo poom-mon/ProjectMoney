@@ -16,7 +16,7 @@
     <script src="../../js/PValid.js"></script>
     <link href="../../css/datetime/date.css" rel="stylesheet" />
     <script src="../../js/datetime/bootstrap-datepicker.js" type="text/javascript"></script>
-    <script src="../../js/credit/formpq_thcredit2.js"></script> 
+    <script src="../../js/credit/formpq_thcredit2.js?ver=20160507v2"></script> 
 
 </asp:Content>
  

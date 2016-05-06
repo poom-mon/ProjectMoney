@@ -12,7 +12,7 @@
             <div class="form-area formAr">
                 <div class="row form-group"> 
 
-                <h2 style="text-align: center;">สมัครบัตรเครดิต </h2>
+                <h2 style="text-align: center;" class="fontcolor">สมัครบัตรเครดิต </h2>
                 <div class="row form-group">
                     <div class="col-xs-12 col-sm-4 clearfix">
                         <select name="ddlTitleName" id="ddlTitleName" class="form-control">
@@ -23,16 +23,44 @@
                         </select>
                         <div class="_alert-meg">คำนำหน้า </div>
                     </div>
-                    <div class="col-xs-12 col-sm-8 clearfix">
+                    <div class="col-xs-12 col-sm-8 clearfix  tbmin ">
                         <input id="tbName" placeholder="ชื่อ-นามสกุล" class="form-control" type="text" />
                         <div class="_alert-meg">ชื่อ-นามสกุล</div>
                     </div>
-                </div>
-
-                <div class="form-group">
+                </div> 
+                <%--<div class="form-group">
                     <input id="tbBirthdate" placeholder="วันเกิด" class="form-control" type="text" />
                     <div class="_alert-meg">วันเกิด</div>
+                </div>--%>
+
+               <div class="row form-group">
+                    <div class="col-xs-12 col-sm-3 clearfix" id="Div1">
+                        <b>วันเกิด</b>
+                    </div>
+                    <div class="col-xs-12 col-sm-3 clearfix">
+                        <select name="ddlDayBirth" id="ddlDayBirth" class="form-control">
+                            <option value="0">-------วันเกิด-------</option>
+                        </select>
+
+                        <div class="_alert-meg">วันเกิด</div>
+                    </div>
+
+                    <div class="col-xs-12 col-sm-3 clearfix tbmin">
+                        <select name="ddlMonthBirth" id="ddlMonthBirth" class="form-control">
+                            <option value="0">-------เดือนเกิด-------</option>
+                        </select>
+                         <div class="_alert-meg">เดือนเกิด</div>
+                    </div>
+
+                   <div class="col-xs-12 col-sm-3 clearfix tbmin">
+                        <select name="ddlYearBirth" id="ddlYearBirth" class="form-control">
+                            <option value="0">-------ปีเกิด-------</option>
+                        </select>
+                       <div class="_alert-meg">ปีเกิด</div>
+                    </div>
+
                 </div>
+
 
                  
 
@@ -152,7 +180,7 @@
 
                 <div class="row form-group">
                     <div class="col-xs-12 col-sm-2 clearfix" id="lbAge">
-                        อายุงาน
+                        <b>อายุงาน</b>
                     </div>
                     <div class="col-xs-12 col-sm-5 clearfix">
                         <%--<input id="tbAgeWork" placeholder="ปี" class="form-control" type="text" />--%>
@@ -167,7 +195,7 @@
 
                         <div class="_alert-meg">อายุงาน</div>
                     </div>
-                    <div class="col-xs-12 col-sm-5 clearfix">
+                    <div class="col-xs-12 col-sm-5 clearfix tbmin">
                         <%--<input id="tbAgeWorkMonth" placeholder="เดือน" class="form-control" type="text" />--%>
                         <select name="ddlAgeWorkMonth" id="ddlAgeWorkMonth" class="form-control">
                             <option value="0">-------เดือนที่ทำงาน-------</option>
